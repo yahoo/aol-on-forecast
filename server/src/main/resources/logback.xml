@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true">
+
+  <property resource="com.aol.one.reporting.forecastapi.server.properties" />
+
+  <!-- <jmxConfigurator /> -->
+
+  <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${catalina.base}/logs/forecast-api.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>forecast-api.log.%d{yyyy-MM-dd}</fileNamePattern>
+
+      <!-- keep 30 days' worth of history -->
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+
+    <encoder>
+      <pattern>%d{yyyy-MM-dd}T%d{HH:mm:ss.SSS, Z} [%thread] %-5level %logger{36}:%line - %msg%n</pattern>
+    </encoder>
+
+  </appender>
+
+  <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
+    <appender-ref ref="ROLLING" />
+    <includeCallerData>true</includeCallerData>
+  </appender>
+
+  <root level="${logback.root.logger.level}">
+    <appender-ref ref="ASYNC" />
+  </root>
+</configuration>

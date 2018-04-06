@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Swagger UI</title>
+<link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700'
+	rel='stylesheet' type='text/css' />
+<link href='css/reset.css' media='screen' rel='stylesheet'
+	type='text/css' />
+<link href='css/screen.css' media='screen' rel='stylesheet'
+	type='text/css' />
+<link href='css/reset.css' media='print' rel='stylesheet'
+	type='text/css' />
+<link href='css/screen.css' media='print' rel='stylesheet'
+	type='text/css' />
+<script type="text/javascript" src="lib/shred.bundle.js"></script>
+<script src='lib/jquery-1.8.0.min.js' type='text/javascript'></script>
+<script src='lib/jquery.slideto.min.js' type='text/javascript'></script>
+<script src='lib/jquery.wiggle.min.js' type='text/javascript'></script>
+<script src='lib/jquery.ba-bbq.min.js' type='text/javascript'></script>
+<script src='lib/handlebars-1.0.0.js' type='text/javascript'></script>
+<script src='lib/underscore-min.js' type='text/javascript'></script>
+<script src='lib/backbone-min.js' type='text/javascript'></script>
+<script src='lib/swagger.js' type='text/javascript'></script>
+<script src='lib/swagger-client.js' type='text/javascript'></script>
+<script src='swagger-ui.js' type='text/javascript'></script>
+<script src='lib/highlight.7.3.pack.js' type='text/javascript'></script>
+
+<!-- enabling this will enable oauth2 implicit scope support -->
+<script src='lib/swagger-oauth.js' type='text/javascript'></script>
+
+<script type="text/javascript">
+	function qualifyURL(url) {
+		var a = document.createElement('a');
+		a.href = url;
+		return a.href;
+	}
+	$(function() {
+		window.swaggerUi = new SwaggerUi({
+			url : qualifyURL("../../forecast-api/api-docs"),
+			dom_id : "swagger-ui-container",
+			supportedSubmitMethods : [ 'get', 'post', 'put', 'delete' ],
+			onComplete : function(swaggerApi, swaggerUi) {
+				log("Loaded SwaggerUI");
+
+				if (typeof initOAuth == "function") {
+					/*
+					initOAuth({
+					  clientId: "your-client-id",
+					  realm: "your-realms",
+					  appName: "your-app-name"
+					});
+					 */
+				}
+				$('pre code').each(function(i, e) {
+					hljs.highlightBlock(e)
+				});
+			},
+			onFailure : function(data) {
+				log("Unable to Load SwaggerUI");
+			},
+			docExpansion : "none",
+			sorter : "alpha"
+		});
+
+
+		$('#input_apiKey').change(
+				function() {
+					var key = $('#input_apiKey')[0].value;
+					log("key: " + key);
+					if (key && key.trim() != "") {
+						log("added key " + key);
+						window.authorizations.add("key", new ApiKeyAuthorization("token", key, "header"));
+					}
+				})
+		window.swaggerUi.load();
+	});
+</script>
+</head>
+
+<body class="swagger-section">
+	<div id='header'>
+		<div class="swagger-ui-wrap">
+			<a id="logo" href="http://swagger.wordnik.com">swagger</a>
+			<form id='api_selector'>
+				<div class='input icon-btn'>
+					<!--  img id="show-pet-store-icon" src="images/pet_store_api.png" title="Show Swagger Petstore Example Apis"-->
+				</div>
+				<div class='input icon-btn'>
+					<img id="show-wordnik-dev-icon" src="images/wordnik_api.png"
+						title="Show Wordnik Developer Apis">
+				</div>
+				<div class='input'>
+					<input placeholder="http://example.com/api" id="input_baseUrl"
+						name="baseUrl" type="text" />
+				</div>
+				<div class='input'>
+					<input placeholder="token" id="input_apiKey" name="apiKey"
+						type="text" />
+				</div>
+				<div class='input'>
+					<a id="explore" href="#">Explore</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="message-bar" class="swagger-ui-wrap">&nbsp;</div>
+
+    <div id="doc-link" class="swagger-ui-wrap">
+        <a href="OverviewIFS.2015.pdf" target="_blank">IFS Documentation</a>
+        <br>
+        <br>
+    </div>
+<!--
+	<div id="login-link" class="swagger-ui-wrap">
+		<script>
+			$(document).ready(function() {
+				var elsUri = 'https://elsuat-sso.corp.aol.com';
+				var realm = '&realm=aolext';
+				if  ( (document.location.hostname === 'dmp-taxonomy.advertising.aol.com') ||
+						(document.location.hostname.indexOf('m-prd-dmp') > -1)) {
+					elsUri = 'https://els-sso.corp.aol.com';
+					realm = '';
+				}
+				$('#login-link a').prop('href', elsUri.concat('/opensso/UI/Login?goto=')
+						.concat(encodeURIComponent(document.location)).concat(realm));
+
+				$.ajax({ url: elsUri.concat('/opensso/identity/attributes?attributenames=name'),
+					xhrFields: {
+						withCredentials: true
+					}
+				})
+						.then(function(data, textStatus) {
+							if (textStatus == 'success') {
+								var matcher = /^userdetails.token.id=(.*)$/m;
+								var token = matcher.exec(data)[1];
+								if (token) {
+									window.authorizations.add("key", new ApiKeyAuthorization("Authorization", "ELS ".concat(token), "header"));
+								}
+							}
+						});
+			});
+		</script>
+		<a href="">
+			<p><b>Click Here To Login</b></p>
+			<br/>
+		</a>
+	</div>
+-->
+	<div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+</body>
+</html>

@@ -1,0 +1,1071 @@
+AR-NONE-CENTER-AUTO  desc  Auto-regressive model with centered forecast with auto-determined cycle
+AR-NONE-CENTER-AUTO  model  model_ar
+AR-NONE-CENTER-AUTO  aic  1
+AR-NONE-CENTER-AUTO  center  1
+AR-NONE-CENTER-AUTO  ndays_back  56
+AR-NONE-CENTER-AUTO  spike_filter  14
+
+AR-NONE-CENTER-NONE  desc  Auto-regressive model with centered forecast with auto-determined lag
+AR-NONE-CENTER-NONE  model  model_ar
+AR-NONE-CENTER-NONE  aic  1
+AR-NONE-CENTER-NONE  center  1
+AR-NONE-CENTER-NONE  ndays_back  56
+AR-NONE-CENTER-NONE  spike_filter  14
+
+AR-NONE-CENTER-WEEK  desc  Auto-regressive model with a lag of 7 and a centered forecast
+AR-NONE-CENTER-WEEK  model  model_ar
+AR-NONE-CENTER-WEEK  aic  7
+AR-NONE-CENTER-WEEK  center  1
+AR-NONE-CENTER-WEEK  ndays_back  56
+AR-NONE-CENTER-WEEK  spike_filter  14
+
+AR-NONE-CENDE-AUTO  desc  Auto-regressive model with a demeaned series, centered forecast, and auto-determined cycle
+AR-NONE-CENDE-AUTO  model  model_ar
+AR-NONE-CENDE-AUTO  aic  1
+AR-NONE-CENDE-AUTO  center  1
+AR-NONE-CENDE-AUTO  demean  1
+AR-NONE-CENDE-AUTO  ndays_back  56
+AR-NONE-CENDE-AUTO  spike_filter  14
+
+AR-NONE-CENDE-NONE  desc  Auto-regressive model with a demeaned series, centered forecast, and auto-determined lag
+AR-NONE-CENDE-NONE  model  model_ar
+AR-NONE-CENDE-NONE  aic  1
+AR-NONE-CENDE-NONE  center  1
+AR-NONE-CENDE-NONE  demean  1
+AR-NONE-CENDE-NONE  ndays_back  56
+AR-NONE-CENDE-NONE  spike_filter  14
+
+AR-NONE-CENDE-WEEK  desc  Auto-regressive model with a demeaned series, centered forecast, and a lag of 7
+AR-NONE-CENDE-WEEK  model  model_ar
+AR-NONE-CENDE-WEEK  aic  7
+AR-NONE-CENDE-WEEK  center  1
+AR-NONE-CENDE-WEEK  demean  1
+AR-NONE-CENDE-WEEK  ndays_back  56
+AR-NONE-CENDE-WEEK  spike_filter  14
+
+AR-NONE-DEMEAN-AUTO  desc  Auto-regressive model with a demeaned series and auto-determined cycle
+AR-NONE-DEMEAN-AUTO  model  model_ar
+AR-NONE-DEMEAN-AUTO  aic  1
+AR-NONE-DEMEAN-AUTO  demean  1
+AR-NONE-DEMEAN-AUTO  ndays_back  z.10
+AR-NONE-DEMEAN-AUTO  spike_filter  14
+
+AR-NONE-DEMEAN-NONE  desc  Auto-regressive model with a demeaned series and auto-determined lag
+AR-NONE-DEMEAN-NONE  model  model_ar
+AR-NONE-DEMEAN-NONE  aic  1
+AR-NONE-DEMEAN-NONE  demean  1
+AR-NONE-DEMEAN-NONE  ndays_back  z.10
+AR-NONE-DEMEAN-NONE  spike_filter  14
+
+AR-NONE-DEMEAN-WEEK  desc  Auto-regressive model with a demeaned series and a lag of 7
+AR-NONE-DEMEAN-WEEK  model  model_ar
+AR-NONE-DEMEAN-WEEK  aic  7
+AR-NONE-DEMEAN-WEEK  demean  1
+AR-NONE-DEMEAN-WEEK  ndays_back  z.10
+AR-NONE-DEMEAN-WEEK  spike_filter  14
+
+AR-NONE-AUTO  desc  Auto-regressive model with auto-determined cycle
+AR-NONE-AUTO  model  model_ar
+AR-NONE-AUTO  aic  1
+AR-NONE-AUTO  ndays_back  z.10
+AR-NONE-AUTO  spike_filter  14
+
+AR-NONE-NONE  desc  Auto-regressive model with auto-determined lag
+AR-NONE-NONE  model  model_ar
+AR-NONE-NONE  aic  1
+AR-NONE-NONE  ndays_back  z.10
+AR-NONE-NONE  spike_filter  14
+
+AR-NONE-WEEK  desc  Auto-regressive model with a lag of 7
+AR-NONE-WEEK  model  model_ar
+AR-NONE-WEEK  aic  7
+AR-NONE-WEEK  ndays_back  z.10
+AR-NONE-WEEK  spike_filter  14
+
+ARIMA-0,0,0-NONE  desc  Non-seasonal ARIMA (0,0,0) with centered forecast
+ARIMA-0,0,0-NONE  model  model_arima
+ARIMA-0,0,0-NONE  arima  (0,0,0)
+ARIMA-0,0,0-NONE  center  1
+ARIMA-0,0,0-NONE  ndays_back  0
+ARIMA-0,0,0-NONE  spike_filter  14
+
+ARIMA-0,0,1-NONE  desc  Non-seasonal ARIMA (0,0,1) with centered forecast
+ARIMA-0,0,1-NONE  model  model_arima
+ARIMA-0,0,1-NONE  arima  (0,0,1)
+ARIMA-0,0,1-NONE  center  1
+ARIMA-0,0,1-NONE  ndays_back  0
+ARIMA-0,0,1-NONE  spike_filter  14
+
+ARIMA-0,0,2-NONE  desc  Non-seasonal ARIMA (0,0,2) with centered forecast
+ARIMA-0,0,2-NONE  model  model_arima
+ARIMA-0,0,2-NONE  arima  (0,0,2)
+ARIMA-0,0,2-NONE  center  1
+ARIMA-0,0,2-NONE  ndays_back  0
+ARIMA-0,0,2-NONE  spike_filter  14
+
+ARIMA-0,0,3-NONE  desc  Non-seasonal ARIMA (0,0,3) with centered forecast
+ARIMA-0,0,3-NONE  model  model_arima
+ARIMA-0,0,3-NONE  arima  (0,0,3)
+ARIMA-0,0,3-NONE  center  1
+ARIMA-0,0,3-NONE  ndays_back  0
+ARIMA-0,0,3-NONE  spike_filter  14
+
+ARIMA-0,1,1-NONE  desc  Non-seasonal ARIMA (0,1,1) with centered forecast
+ARIMA-0,1,1-NONE  model  model_arima
+ARIMA-0,1,1-NONE  arima  (0,1,1)
+ARIMA-0,1,1-NONE  center  1
+ARIMA-0,1,1-NONE  ndays_back  0
+ARIMA-0,1,1-NONE  spike_filter  14
+
+ARIMA-0,1,2-NONE  desc  Non-seasonal ARIMA (0,1,2) with centered forecast
+ARIMA-0,1,2-NONE  model  model_arima
+ARIMA-0,1,2-NONE  arima  (0,1,2)
+ARIMA-0,1,2-NONE  center  1
+ARIMA-0,1,2-NONE  ndays_back  0
+ARIMA-0,1,2-NONE  spike_filter  14
+
+ARIMA-0,2,2-NONE  desc  Non-seasonal ARIMA (0,2,2) with centered forecast
+ARIMA-0,2,2-NONE  model  model_arima
+ARIMA-0,2,2-NONE  arima  (0,2,2)
+ARIMA-0,2,2-NONE  center  1
+ARIMA-0,2,2-NONE  ndays_back  0
+ARIMA-0,2,2-NONE  spike_filter  14
+
+ARIMA-1,0,0-NONE  desc  Non-seasonal ARIMA (1,0,0) with centered forecast
+ARIMA-1,0,0-NONE  model  model_arima
+ARIMA-1,0,0-NONE  arima  (1,0,0)
+ARIMA-1,0,0-NONE  center  1
+ARIMA-1,0,0-NONE  ndays_back  0
+ARIMA-1,0,0-NONE  spike_filter  14
+
+ARIMA-1,0,1-NONE  desc  Non-seasonal ARIMA (1,0,1) with centered forecast
+ARIMA-1,0,1-NONE  model  model_arima
+ARIMA-1,0,1-NONE  arima  (1,0,1)
+ARIMA-1,0,1-NONE  center  1
+ARIMA-1,0,1-NONE  ndays_back  0
+ARIMA-1,0,1-NONE  spike_filter  14
+
+ARIMA-1,1,1-NONE  desc  Non-seasonal ARIMA (1,1,1) with centered forecast
+ARIMA-1,1,1-NONE  model  model_arima
+ARIMA-1,1,1-NONE  arima  (1,1,1)
+ARIMA-1,1,1-NONE  center  1
+ARIMA-1,1,1-NONE  ndays_back  0
+ARIMA-1,1,1-NONE  spike_filter  14
+
+ARIMA-2,0,0-NONE  desc  Non-seasonal ARIMA (2,0,0) with centered forecast
+ARIMA-2,0,0-NONE  model  model_arima
+ARIMA-2,0,0-NONE  arima  (2,0,0)
+ARIMA-2,0,0-NONE  center  1
+ARIMA-2,0,0-NONE  ndays_back  0
+ARIMA-2,0,0-NONE  spike_filter  14
+
+ARIMA-2,0,2-NONE  desc  Non-seasonal ARIMA (2,0,2) with centered forecast
+ARIMA-2,0,2-NONE  model  model_arima
+ARIMA-2,0,2-NONE  arima  (2,0,2)
+ARIMA-2,0,2-NONE  center  1
+ARIMA-2,0,2-NONE  ndays_back  0
+ARIMA-2,0,2-NONE  spike_filter  14
+
+ARIMA-2,1,0-NONE  desc  Non-seasonal ARIMA (2,1,0) with centered forecast
+ARIMA-2,1,0-NONE  model  model_arima
+ARIMA-2,1,0-NONE  arima  (2,1,0)
+ARIMA-2,1,0-NONE  center  1
+ARIMA-2,1,0-NONE  ndays_back  0
+ARIMA-2,1,0-NONE  spike_filter  14
+
+ARIMA-2,1,2-NONE  desc  Non-seasonal ARIMA (2,1,2) with centered forecast
+ARIMA-2,1,2-NONE  model  model_arima
+ARIMA-2,1,2-NONE  arima  (2,1,2)
+ARIMA-2,1,2-NONE  center  1
+ARIMA-2,1,2-NONE  ndays_back  0
+ARIMA-2,1,2-NONE  spike_filter  14
+
+ARIMA-3,0,0-NONE  desc  Non-seasonal ARIMA (3,0,0) with centered forecast
+ARIMA-3,0,0-NONE  model  model_arima
+ARIMA-3,0,0-NONE  arima  (3,0,0)
+ARIMA-3,0,0-NONE  center  1
+ARIMA-3,0,0-NONE  ndays_back  0
+ARIMA-3,0,0-NONE  spike_filter  14
+
+ARIMA-3,0,3-NONE  desc  Non-seasonal ARIMA (3,0,3) with centered forecast
+ARIMA-3,0,3-NONE  model  model_arima
+ARIMA-3,0,3-NONE  arima  (3,0,3)
+ARIMA-3,0,3-NONE  center  1
+ARIMA-3,0,3-NONE  ndays_back  0
+ARIMA-3,0,3-NONE  spike_filter  14
+
+ARIMA-3,1,0-NONE  desc  Non-seasonal ARIMA (3,1,0) with centered forecast
+ARIMA-3,1,0-NONE  model  model_arima
+ARIMA-3,1,0-NONE  arima  (3,1,0)
+ARIMA-3,1,0-NONE  center  1
+ARIMA-3,1,0-NONE  ndays_back  0
+ARIMA-3,1,0-NONE  spike_filter  14
+
+ARIMA-0,0,0-0,0,1s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,0)(0,0,1)s with centered forecast
+ARIMA-0,0,0-0,0,1s-AUTO  model  model_arima
+ARIMA-0,0,0-0,0,1s-AUTO  arima  (0,0,0)(0,0,1)s
+ARIMA-0,0,0-0,0,1s-AUTO  center  1
+ARIMA-0,0,0-0,0,1s-AUTO  cycle  -1
+ARIMA-0,0,0-0,0,1s-AUTO  ndays_back  0
+ARIMA-0,0,0-0,0,1s-AUTO  spike_filter  14
+
+ARIMA-0,0,0-0,0,2s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,0)(0,0,2)s with centered forecast
+ARIMA-0,0,0-0,0,2s-AUTO  model  model_arima
+ARIMA-0,0,0-0,0,2s-AUTO  arima  (0,0,0)(0,0,2)s
+ARIMA-0,0,0-0,0,2s-AUTO  center  1
+ARIMA-0,0,0-0,0,2s-AUTO  cycle  -1
+ARIMA-0,0,0-0,0,2s-AUTO  ndays_back  0
+ARIMA-0,0,0-0,0,2s-AUTO  spike_filter  14
+
+ARIMA-0,0,0-0,0,3s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,0)(0,0,3)s with centered forecast
+ARIMA-0,0,0-0,0,3s-AUTO  model  model_arima
+ARIMA-0,0,0-0,0,3s-AUTO  arima  (0,0,0)(0,0,3)s
+ARIMA-0,0,0-0,0,3s-AUTO  center  1
+ARIMA-0,0,0-0,0,3s-AUTO  cycle  -1
+ARIMA-0,0,0-0,0,3s-AUTO  ndays_back  0
+ARIMA-0,0,0-0,0,3s-AUTO  spike_filter  14
+
+ARIMA-0,0,0-1,0,0s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,0)(1,0,0)s with centered forecast
+ARIMA-0,0,0-1,0,0s-AUTO  model  model_arima
+ARIMA-0,0,0-1,0,0s-AUTO  arima  (0,0,0)(1,0,0)s
+ARIMA-0,0,0-1,0,0s-AUTO  center  1
+ARIMA-0,0,0-1,0,0s-AUTO  cycle  -1
+ARIMA-0,0,0-1,0,0s-AUTO  ndays_back  0
+ARIMA-0,0,0-1,0,0s-AUTO  spike_filter  14
+
+ARIMA-0,0,0-2,0,0s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,0)(2,0,0)s with centered forecast
+ARIMA-0,0,0-2,0,0s-AUTO  model  model_arima
+ARIMA-0,0,0-2,0,0s-AUTO  arima  (0,0,0)(2,0,0)s
+ARIMA-0,0,0-2,0,0s-AUTO  center  1
+ARIMA-0,0,0-2,0,0s-AUTO  cycle  -1
+ARIMA-0,0,0-2,0,0s-AUTO  ndays_back  0
+ARIMA-0,0,0-2,0,0s-AUTO  spike_filter  14
+
+ARIMA-0,0,0-3,0,0s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,0)(3,0,0)s with centered forecast
+ARIMA-0,0,0-3,0,0s-AUTO  model  model_arima
+ARIMA-0,0,0-3,0,0s-AUTO  arima  (0,0,0)(3,0,0)s
+ARIMA-0,0,0-3,0,0s-AUTO  center  1
+ARIMA-0,0,0-3,0,0s-AUTO  cycle  -1
+ARIMA-0,0,0-3,0,0s-AUTO  ndays_back  0
+ARIMA-0,0,0-3,0,0s-AUTO  spike_filter  14
+
+ARIMA-0,0,0-1,0,1s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,0)(1,0,1)s with centered forecast
+ARIMA-0,0,0-1,0,1s-AUTO  model  model_arima
+ARIMA-0,0,0-1,0,1s-AUTO  arima  (0,0,0)(1,0,1)s
+ARIMA-0,0,0-1,0,1s-AUTO  center  1
+ARIMA-0,0,0-1,0,1s-AUTO  cycle  -1
+ARIMA-0,0,0-1,0,1s-AUTO  ndays_back  0
+ARIMA-0,0,0-1,0,1s-AUTO  spike_filter  14
+
+ARIMA-0,0,0-2,0,2s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,0)(2,0,2)s with centered forecast
+ARIMA-0,0,0-2,0,2s-AUTO  model  model_arima
+ARIMA-0,0,0-2,0,2s-AUTO  arima  (0,0,0)(2,0,2)s
+ARIMA-0,0,0-2,0,2s-AUTO  center  1
+ARIMA-0,0,0-2,0,2s-AUTO  cycle  -1
+ARIMA-0,0,0-2,0,2s-AUTO  ndays_back  0
+ARIMA-0,0,0-2,0,2s-AUTO  spike_filter  14
+
+ARIMA-0,0,0-3,0,3s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,0)(3,0,3)s with centered forecast
+ARIMA-0,0,0-3,0,3s-AUTO  model  model_arima
+ARIMA-0,0,0-3,0,3s-AUTO  arima  (0,0,0)(3,0,3)s
+ARIMA-0,0,0-3,0,3s-AUTO  center  1
+ARIMA-0,0,0-3,0,3s-AUTO  cycle  -1
+ARIMA-0,0,0-3,0,3s-AUTO  ndays_back  0
+ARIMA-0,0,0-3,0,3s-AUTO  spike_filter  14
+
+ARIMA-0,0,1-0,0,1s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,1)(0,0,1)s with centered forecast
+ARIMA-0,0,1-0,0,1s-AUTO  model  model_arima
+ARIMA-0,0,1-0,0,1s-AUTO  arima  (0,0,1)(0,0,1)s
+ARIMA-0,0,1-0,0,1s-AUTO  center  1
+ARIMA-0,0,1-0,0,1s-AUTO  cycle  -1
+ARIMA-0,0,1-0,0,1s-AUTO  ndays_back  0
+ARIMA-0,0,1-0,0,1s-AUTO  spike_filter  14
+
+ARIMA-0,0,2-0,0,1s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,2)(0,0,1)s with centered forecast
+ARIMA-0,0,2-0,0,1s-AUTO  model  model_arima
+ARIMA-0,0,2-0,0,1s-AUTO  arima  (0,0,2)(0,0,1)s
+ARIMA-0,0,2-0,0,1s-AUTO  center  1
+ARIMA-0,0,2-0,0,1s-AUTO  cycle  -1
+ARIMA-0,0,2-0,0,1s-AUTO  ndays_back  0
+ARIMA-0,0,2-0,0,1s-AUTO  spike_filter  14
+
+ARIMA-0,0,3-0,0,1s-AUTO  desc  Auto-detect seasonal ARIMA (0,0,3)(0,0,1)s with centered forecast
+ARIMA-0,0,3-0,0,1s-AUTO  model  model_arima
+ARIMA-0,0,3-0,0,1s-AUTO  arima  (0,0,3)(0,0,1)s
+ARIMA-0,0,3-0,0,1s-AUTO  center  1
+ARIMA-0,0,3-0,0,1s-AUTO  cycle  -1
+ARIMA-0,0,3-0,0,1s-AUTO  ndays_back  0
+ARIMA-0,0,3-0,0,1s-AUTO  spike_filter  14
+
+ARIMA-0,1,1-0,1,1s-AUTO  desc  Auto-detect seasonal ARIMA (0,1,1)(0,1,1)s with centered forecast
+ARIMA-0,1,1-0,1,1s-AUTO  model  model_arima
+ARIMA-0,1,1-0,1,1s-AUTO  arima  (0,1,1)(0,1,1)s
+ARIMA-0,1,1-0,1,1s-AUTO  center  1
+ARIMA-0,1,1-0,1,1s-AUTO  cycle  -1
+ARIMA-0,1,1-0,1,1s-AUTO  ndays_back  0
+ARIMA-0,1,1-0,1,1s-AUTO  spike_filter  14
+
+ARIMA-0,1,2-0,1,1s-AUTO  desc  Auto-detect seasonal ARIMA (0,1,2)(0,1,1)s with centered forecast
+ARIMA-0,1,2-0,1,1s-AUTO  model  model_arima
+ARIMA-0,1,2-0,1,1s-AUTO  arima  (0,1,2)(0,1,1)s
+ARIMA-0,1,2-0,1,1s-AUTO  center  1
+ARIMA-0,1,2-0,1,1s-AUTO  cycle  -1
+ARIMA-0,1,2-0,1,1s-AUTO  ndays_back  0
+ARIMA-0,1,2-0,1,1s-AUTO  spike_filter  14
+
+ARIMA-0,2,2-0,1,1s-AUTO  desc  Auto-detect seasonal ARIMA (0,2,2)(0,1,1)s with centered forecast
+ARIMA-0,2,2-0,1,1s-AUTO  model  model_arima
+ARIMA-0,2,2-0,1,1s-AUTO  arima  (0,2,2)(0,1,1)s
+ARIMA-0,2,2-0,1,1s-AUTO  center  1
+ARIMA-0,2,2-0,1,1s-AUTO  cycle  -1
+ARIMA-0,2,2-0,1,1s-AUTO  ndays_back  0
+ARIMA-0,2,2-0,1,1s-AUTO  spike_filter  14
+
+ARIMA-1,0,0-1,0,0s-AUTO  desc  Auto-detect seasonal ARIMA (1,0,0)(1,0,0)s with centered forecast
+ARIMA-1,0,0-1,0,0s-AUTO  model  model_arima
+ARIMA-1,0,0-1,0,0s-AUTO  arima  (1,0,0)(1,0,0)s
+ARIMA-1,0,0-1,0,0s-AUTO  center  1
+ARIMA-1,0,0-1,0,0s-AUTO  cycle  -1
+ARIMA-1,0,0-1,0,0s-AUTO  ndays_back  0
+ARIMA-1,0,0-1,0,0s-AUTO  spike_filter  14
+
+ARIMA-1,0,0-2,0,0s-AUTO  desc  Auto-detect seasonal ARIMA (1,0,0)(2,0,0)s with centered forecast
+ARIMA-1,0,0-2,0,0s-AUTO  model  model_arima
+ARIMA-1,0,0-2,0,0s-AUTO  arima  (1,0,0)(2,0,0)s
+ARIMA-1,0,0-2,0,0s-AUTO  center  1
+ARIMA-1,0,0-2,0,0s-AUTO  cycle  -1
+ARIMA-1,0,0-2,0,0s-AUTO  ndays_back  0
+ARIMA-1,0,0-2,0,0s-AUTO  spike_filter  14
+
+ARIMA-1,0,1-1,0,1s-AUTO  desc  Auto-detect seasonal ARIMA (1,0,1)(1,0,1)s with centered forecast
+ARIMA-1,0,1-1,0,1s-AUTO  model  model_arima
+ARIMA-1,0,1-1,0,1s-AUTO  arima  (1,0,1)(1,0,1)s
+ARIMA-1,0,1-1,0,1s-AUTO  center  1
+ARIMA-1,0,1-1,0,1s-AUTO  cycle  -1
+ARIMA-1,0,1-1,0,1s-AUTO  ndays_back  0
+ARIMA-1,0,1-1,0,1s-AUTO  spike_filter  14
+
+ARIMA-1,1,1-1,1,1s-AUTO  desc  Auto-detect seasonal ARIMA (1,1,1)(1,1,1)s with centered forecast
+ARIMA-1,1,1-1,1,1s-AUTO  model  model_arima
+ARIMA-1,1,1-1,1,1s-AUTO  arima  (1,1,1)(1,1,1)s
+ARIMA-1,1,1-1,1,1s-AUTO  center  1
+ARIMA-1,1,1-1,1,1s-AUTO  cycle  -1
+ARIMA-1,1,1-1,1,1s-AUTO  ndays_back  0
+ARIMA-1,1,1-1,1,1s-AUTO  spike_filter  14
+
+ARIMA-2,0,0-1,0,0s-AUTO  desc  Auto-detect seasonal ARIMA (2,0,0)(1,0,0)s with centered forecast
+ARIMA-2,0,0-1,0,0s-AUTO  model  model_arima
+ARIMA-2,0,0-1,0,0s-AUTO  arima  (2,0,0)(1,0,0)s
+ARIMA-2,0,0-1,0,0s-AUTO  center  1
+ARIMA-2,0,0-1,0,0s-AUTO  cycle  -1
+ARIMA-2,0,0-1,0,0s-AUTO  ndays_back  0
+ARIMA-2,0,0-1,0,0s-AUTO  spike_filter  14
+
+ARIMA-2,0,2-1,0,1s-AUTO  desc  Auto-detect seasonal ARIMA (2,0,2)(1,0,1)s with centered forecast
+ARIMA-2,0,2-1,0,1s-AUTO  model  model_arima
+ARIMA-2,0,2-1,0,1s-AUTO  arima  (2,0,2)(1,0,1)s
+ARIMA-2,0,2-1,0,1s-AUTO  center  1
+ARIMA-2,0,2-1,0,1s-AUTO  cycle  -1
+ARIMA-2,0,2-1,0,1s-AUTO  ndays_back  0
+ARIMA-2,0,2-1,0,1s-AUTO  spike_filter  14
+
+ARIMA-2,1,0-0,1,1s-AUTO  desc  Auto-detect seasonal ARIMA (2,1,0)(0,1,1)s with centered forecast
+ARIMA-2,1,0-0,1,1s-AUTO  model  model_arima
+ARIMA-2,1,0-0,1,1s-AUTO  arima  (2,1,0)(0,1,1)s
+ARIMA-2,1,0-0,1,1s-AUTO  center  1
+ARIMA-2,1,0-0,1,1s-AUTO  cycle  -1
+ARIMA-2,1,0-0,1,1s-AUTO  ndays_back  0
+ARIMA-2,1,0-0,1,1s-AUTO  spike_filter  14
+
+ARIMA-2,1,0-1,0,0s-AUTO  desc  Auto-detect seasonal ARIMA (2,1,0)(1,0,0)s with centered forecast
+ARIMA-2,1,0-1,0,0s-AUTO  model  model_arima
+ARIMA-2,1,0-1,0,0s-AUTO  arima  (2,1,0)(1,0,0)s
+ARIMA-2,1,0-1,0,0s-AUTO  center  1
+ARIMA-2,1,0-1,0,0s-AUTO  cycle  -1
+ARIMA-2,1,0-1,0,0s-AUTO  ndays_back  0
+ARIMA-2,1,0-1,0,0s-AUTO  spike_filter  14
+
+ARIMA-2,1,2-0,1,1s-AUTO  desc  Auto-detect seasonal ARIMA (2,1,2)(0,1,1)s with centered forecast
+ARIMA-2,1,2-0,1,1s-AUTO  model  model_arima
+ARIMA-2,1,2-0,1,1s-AUTO  arima  (2,1,2)(0,1,1)s
+ARIMA-2,1,2-0,1,1s-AUTO  center  1
+ARIMA-2,1,2-0,1,1s-AUTO  cycle  -1
+ARIMA-2,1,2-0,1,1s-AUTO  ndays_back  0
+ARIMA-2,1,2-0,1,1s-AUTO  spike_filter  14
+
+ARIMA-3,0,0-1,0,0s-AUTO  desc  Auto-detect seasonal ARIMA (3,0,0)(1,0,0)s with centered forecast
+ARIMA-3,0,0-1,0,0s-AUTO  model  model_arima
+ARIMA-3,0,0-1,0,0s-AUTO  arima  (3,0,0)(1,0,0)s
+ARIMA-3,0,0-1,0,0s-AUTO  center  1
+ARIMA-3,0,0-1,0,0s-AUTO  cycle  -1
+ARIMA-3,0,0-1,0,0s-AUTO  ndays_back  0
+ARIMA-3,0,0-1,0,0s-AUTO  spike_filter  14
+
+ARIMA-3,0,3-1,0,1s-AUTO  desc  Auto-detect seasonal ARIMA (3,0,3)(1,0,1)s with centered forecast
+ARIMA-3,0,3-1,0,1s-AUTO  model  model_arima
+ARIMA-3,0,3-1,0,1s-AUTO  arima  (3,0,3)(1,0,1)s
+ARIMA-3,0,3-1,0,1s-AUTO  center  1
+ARIMA-3,0,3-1,0,1s-AUTO  cycle  -1
+ARIMA-3,0,3-1,0,1s-AUTO  ndays_back  0
+ARIMA-3,0,3-1,0,1s-AUTO  spike_filter  14
+
+ARIMA-0,0,0-0,0,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(0,0,1)s with centered forecast
+ARIMA-0,0,0-0,0,1s-WEEK  model  model_arima
+ARIMA-0,0,0-0,0,1s-WEEK  arima  (0,0,0)(0,0,1)s
+ARIMA-0,0,0-0,0,1s-WEEK  center  1
+ARIMA-0,0,0-0,0,1s-WEEK  cycle  7
+ARIMA-0,0,0-0,0,1s-WEEK  ndays_back  0
+ARIMA-0,0,0-0,0,1s-WEEK  spike_filter  14
+
+ARIMA-0,0,0-0,0,2s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(0,0,2)s with centered forecast
+ARIMA-0,0,0-0,0,2s-WEEK  model  model_arima
+ARIMA-0,0,0-0,0,2s-WEEK  arima  (0,0,0)(0,0,2)s
+ARIMA-0,0,0-0,0,2s-WEEK  center  1
+ARIMA-0,0,0-0,0,2s-WEEK  cycle  7
+ARIMA-0,0,0-0,0,2s-WEEK  ndays_back  0
+ARIMA-0,0,0-0,0,2s-WEEK  spike_filter  14
+
+ARIMA-0,0,0-0,0,3s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(0,0,3)s with centered forecast
+ARIMA-0,0,0-0,0,3s-WEEK  model  model_arima
+ARIMA-0,0,0-0,0,3s-WEEK  arima  (0,0,0)(0,0,3)s
+ARIMA-0,0,0-0,0,3s-WEEK  center  1
+ARIMA-0,0,0-0,0,3s-WEEK  cycle  7
+ARIMA-0,0,0-0,0,3s-WEEK  ndays_back  0
+ARIMA-0,0,0-0,0,3s-WEEK  spike_filter  14
+
+ARIMA-0,0,0-1,0,0s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(1,0,0)s with centered forecast
+ARIMA-0,0,0-1,0,0s-WEEK  model  model_arima
+ARIMA-0,0,0-1,0,0s-WEEK  arima  (0,0,0)(1,0,0)s
+ARIMA-0,0,0-1,0,0s-WEEK  center  1
+ARIMA-0,0,0-1,0,0s-WEEK  cycle  7
+ARIMA-0,0,0-1,0,0s-WEEK  ndays_back  0
+ARIMA-0,0,0-1,0,0s-WEEK  spike_filter  14
+
+ARIMA-0,0,0-2,0,0s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(2,0,0)s with centered forecast
+ARIMA-0,0,0-2,0,0s-WEEK  model  model_arima
+ARIMA-0,0,0-2,0,0s-WEEK  arima  (0,0,0)(2,0,0)s
+ARIMA-0,0,0-2,0,0s-WEEK  center  1
+ARIMA-0,0,0-2,0,0s-WEEK  cycle  7
+ARIMA-0,0,0-2,0,0s-WEEK  ndays_back  0
+ARIMA-0,0,0-2,0,0s-WEEK  spike_filter  14
+
+ARIMA-0,0,0-3,0,0s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(3,0,0)s with centered forecast
+ARIMA-0,0,0-3,0,0s-WEEK  model  model_arima
+ARIMA-0,0,0-3,0,0s-WEEK  arima  (0,0,0)(3,0,0)s
+ARIMA-0,0,0-3,0,0s-WEEK  center  1
+ARIMA-0,0,0-3,0,0s-WEEK  cycle  7
+ARIMA-0,0,0-3,0,0s-WEEK  ndays_back  0
+ARIMA-0,0,0-3,0,0s-WEEK  spike_filter  14
+
+ARIMA-0,0,0-1,0,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(1,0,1)s with centered forecast
+ARIMA-0,0,0-1,0,1s-WEEK  model  model_arima
+ARIMA-0,0,0-1,0,1s-WEEK  arima  (0,0,0)(1,0,1)s
+ARIMA-0,0,0-1,0,1s-WEEK  center  1
+ARIMA-0,0,0-1,0,1s-WEEK  cycle  7
+ARIMA-0,0,0-1,0,1s-WEEK  ndays_back  0
+ARIMA-0,0,0-1,0,1s-WEEK  spike_filter  14
+
+ARIMA-0,0,0-2,0,2s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(2,0,2)s with centered forecast
+ARIMA-0,0,0-2,0,2s-WEEK  model  model_arima
+ARIMA-0,0,0-2,0,2s-WEEK  arima  (0,0,0)(2,0,2)s
+ARIMA-0,0,0-2,0,2s-WEEK  center  1
+ARIMA-0,0,0-2,0,2s-WEEK  cycle  7
+ARIMA-0,0,0-2,0,2s-WEEK  ndays_back  0
+ARIMA-0,0,0-2,0,2s-WEEK  spike_filter  14
+
+ARIMA-0,0,0-3,0,3s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(3,0,3)s with centered forecast
+ARIMA-0,0,0-3,0,3s-WEEK  model  model_arima
+ARIMA-0,0,0-3,0,3s-WEEK  arima  (0,0,0)(3,0,3)s
+ARIMA-0,0,0-3,0,3s-WEEK  center  1
+ARIMA-0,0,0-3,0,3s-WEEK  cycle  7
+ARIMA-0,0,0-3,0,3s-WEEK  ndays_back  0
+ARIMA-0,0,0-3,0,3s-WEEK  spike_filter  14
+
+ARIMA-0,0,1-0,0,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,1)(0,0,1)s with centered forecast
+ARIMA-0,0,1-0,0,1s-WEEK  model  model_arima
+ARIMA-0,0,1-0,0,1s-WEEK  arima  (0,0,1)(0,0,1)s
+ARIMA-0,0,1-0,0,1s-WEEK  center  1
+ARIMA-0,0,1-0,0,1s-WEEK  cycle  7
+ARIMA-0,0,1-0,0,1s-WEEK  ndays_back  0
+ARIMA-0,0,1-0,0,1s-WEEK  spike_filter  14
+
+ARIMA-0,0,2-0,0,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,2)(0,0,1)s with centered forecast
+ARIMA-0,0,2-0,0,1s-WEEK  model  model_arima
+ARIMA-0,0,2-0,0,1s-WEEK  arima  (0,0,2)(0,0,1)s
+ARIMA-0,0,2-0,0,1s-WEEK  center  1
+ARIMA-0,0,2-0,0,1s-WEEK  cycle  7
+ARIMA-0,0,2-0,0,1s-WEEK  ndays_back  0
+ARIMA-0,0,2-0,0,1s-WEEK  spike_filter  14
+
+ARIMA-0,0,3-0,0,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,3)(0,0,1)s with centered forecast
+ARIMA-0,0,3-0,0,1s-WEEK  model  model_arima
+ARIMA-0,0,3-0,0,1s-WEEK  arima  (0,0,3)(0,0,1)s
+ARIMA-0,0,3-0,0,1s-WEEK  center  1
+ARIMA-0,0,3-0,0,1s-WEEK  cycle  7
+ARIMA-0,0,3-0,0,1s-WEEK  ndays_back  0
+ARIMA-0,0,3-0,0,1s-WEEK  spike_filter  14
+
+ARIMA-0,1,1-0,1,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,1,1)(0,1,1)s with centered forecast
+ARIMA-0,1,1-0,1,1s-WEEK  model  model_arima
+ARIMA-0,1,1-0,1,1s-WEEK  arima  (0,1,1)(0,1,1)s
+ARIMA-0,1,1-0,1,1s-WEEK  center  1
+ARIMA-0,1,1-0,1,1s-WEEK  cycle  7
+ARIMA-0,1,1-0,1,1s-WEEK  ndays_back  0
+ARIMA-0,1,1-0,1,1s-WEEK  spike_filter  14
+
+ARIMA-0,1,2-0,1,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,1,2)(0,1,1)s with centered forecast
+ARIMA-0,1,2-0,1,1s-WEEK  model  model_arima
+ARIMA-0,1,2-0,1,1s-WEEK  arima  (0,1,2)(0,1,1)s
+ARIMA-0,1,2-0,1,1s-WEEK  center  1
+ARIMA-0,1,2-0,1,1s-WEEK  cycle  7
+ARIMA-0,1,2-0,1,1s-WEEK  ndays_back  0
+ARIMA-0,1,2-0,1,1s-WEEK  spike_filter  14
+
+ARIMA-0,2,2-0,1,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (0,0,0)(0,0,1)s with centered forecast
+ARIMA-0,2,2-0,1,1s-WEEK  model  model_arima
+ARIMA-0,2,2-0,1,1s-WEEK  arima  (0,2,2)(0,1,1)s
+ARIMA-0,2,2-0,1,1s-WEEK  center  1
+ARIMA-0,2,2-0,1,1s-WEEK  cycle  7
+ARIMA-0,2,2-0,1,1s-WEEK  ndays_back  0
+ARIMA-0,2,2-0,1,1s-WEEK  spike_filter  14
+
+ARIMA-1,0,0-1,0,0s-WEEK  desc  Seasonal cycle of 7 ARIMA (1,0,0)(1,0,0)s with centered forecast
+ARIMA-1,0,0-1,0,0s-WEEK  model  model_arima
+ARIMA-1,0,0-1,0,0s-WEEK  arima  (1,0,0)(1,0,0)s
+ARIMA-1,0,0-1,0,0s-WEEK  center  1
+ARIMA-1,0,0-1,0,0s-WEEK  cycle  7
+ARIMA-1,0,0-1,0,0s-WEEK  ndays_back  0
+ARIMA-1,0,0-1,0,0s-WEEK  spike_filter  14
+
+ARIMA-1,0,0-2,0,0s-WEEK  desc  Seasonal cycle of 7 ARIMA (1,0,0)(2,0,0)s with centered forecast
+ARIMA-1,0,0-2,0,0s-WEEK  model  model_arima
+ARIMA-1,0,0-2,0,0s-WEEK  arima  (1,0,0)(2,0,0)s
+ARIMA-1,0,0-2,0,0s-WEEK  center  1
+ARIMA-1,0,0-2,0,0s-WEEK  cycle  7
+ARIMA-1,0,0-2,0,0s-WEEK  ndays_back  0
+ARIMA-1,0,0-2,0,0s-WEEK  spike_filter  14
+
+ARIMA-1,0,1-1,0,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (1,0,1)(1,0,1)s with centered forecast
+ARIMA-1,0,1-1,0,1s-WEEK  model  model_arima
+ARIMA-1,0,1-1,0,1s-WEEK  arima  (1,0,1)(1,0,1)s
+ARIMA-1,0,1-1,0,1s-WEEK  center  1
+ARIMA-1,0,1-1,0,1s-WEEK  cycle  7
+ARIMA-1,0,1-1,0,1s-WEEK  ndays_back  0
+ARIMA-1,0,1-1,0,1s-WEEK  spike_filter  14
+
+ARIMA-1,1,1-1,1,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (1,1,1)(1,1,1)s with centered forecast
+ARIMA-1,1,1-1,1,1s-WEEK  model  model_arima
+ARIMA-1,1,1-1,1,1s-WEEK  arima  (1,1,1)(1,1,1)s
+ARIMA-1,1,1-1,1,1s-WEEK  center  1
+ARIMA-1,1,1-1,1,1s-WEEK  cycle  7
+ARIMA-1,1,1-1,1,1s-WEEK  ndays_back  0
+ARIMA-1,1,1-1,1,1s-WEEK  spike_filter  14
+
+ARIMA-2,0,0-1,0,0s-WEEK  desc  Seasonal cycle of 7 ARIMA (2,0,0)(1,0,0)s with centered forecast
+ARIMA-2,0,0-1,0,0s-WEEK  model  model_arima
+ARIMA-2,0,0-1,0,0s-WEEK  arima  (2,0,0)(1,0,0)s
+ARIMA-2,0,0-1,0,0s-WEEK  center  1
+ARIMA-2,0,0-1,0,0s-WEEK  cycle  7
+ARIMA-2,0,0-1,0,0s-WEEK  ndays_back  0
+ARIMA-2,0,0-1,0,0s-WEEK  spike_filter  14
+
+ARIMA-2,0,2-1,0,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (2,0,2)(1,0,1)s with centered forecast
+ARIMA-2,0,2-1,0,1s-WEEK  model  model_arima
+ARIMA-2,0,2-1,0,1s-WEEK  arima  (2,0,2)(1,0,1)s
+ARIMA-2,0,2-1,0,1s-WEEK  center  1
+ARIMA-2,0,2-1,0,1s-WEEK  cycle  7
+ARIMA-2,0,2-1,0,1s-WEEK  ndays_back  0
+ARIMA-2,0,2-1,0,1s-WEEK  spike_filter  14
+
+ARIMA-2,1,0-0,1,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (2,1,0)(0,1,1)s with centered forecast
+ARIMA-2,1,0-0,1,1s-WEEK  model  model_arima
+ARIMA-2,1,0-0,1,1s-WEEK  arima  (2,1,0)(0,1,1)s
+ARIMA-2,1,0-0,1,1s-WEEK  center  1
+ARIMA-2,1,0-0,1,1s-WEEK  cycle  7
+ARIMA-2,1,0-0,1,1s-WEEK  ndays_back  0
+ARIMA-2,1,0-0,1,1s-WEEK  spike_filter  14
+
+ARIMA-2,1,0-1,0,0s-WEEK  desc  Seasonal cycle of 7 ARIMA (2,1,0)(1,0,0)s with centered forecast
+ARIMA-2,1,0-1,0,0s-WEEK  model  model_arima
+ARIMA-2,1,0-1,0,0s-WEEK  arima  (2,1,0)(1,0,0)s
+ARIMA-2,1,0-1,0,0s-WEEK  center  1
+ARIMA-2,1,0-1,0,0s-WEEK  cycle  7
+ARIMA-2,1,0-1,0,0s-WEEK  ndays_back  0
+ARIMA-2,1,0-1,0,0s-WEEK  spike_filter  14
+
+ARIMA-2,1,2-0,1,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (2,1,2)(0,1,1)s with centered forecast
+ARIMA-2,1,2-0,1,1s-WEEK  model  model_arima
+ARIMA-2,1,2-0,1,1s-WEEK  arima  (2,1,2)(0,1,1)s
+ARIMA-2,1,2-0,1,1s-WEEK  center  1
+ARIMA-2,1,2-0,1,1s-WEEK  cycle  7
+ARIMA-2,1,2-0,1,1s-WEEK  ndays_back  0
+ARIMA-2,1,2-0,1,1s-WEEK  spike_filter  14
+
+ARIMA-3,0,0-1,0,0s-WEEK  desc  Seasonal cycle of 7 ARIMA (3,0,0)(1,0,0)s with centered forecast
+ARIMA-3,0,0-1,0,0s-WEEK  model  model_arima
+ARIMA-3,0,0-1,0,0s-WEEK  arima  (3,0,0)(1,0,0)s
+ARIMA-3,0,0-1,0,0s-WEEK  center  1
+ARIMA-3,0,0-1,0,0s-WEEK  cycle  7
+ARIMA-3,0,0-1,0,0s-WEEK  ndays_back  0
+ARIMA-3,0,0-1,0,0s-WEEK  spike_filter  14
+
+ARIMA-3,0,3-1,0,1s-WEEK  desc  Seasonal cycle of 7 ARIMA (3,0,3)(1,0,1)s with centered forecast
+ARIMA-3,0,3-1,0,1s-WEEK  model  model_arima
+ARIMA-3,0,3-1,0,1s-WEEK  arima  (3,0,3)(1,0,1)s
+ARIMA-3,0,3-1,0,1s-WEEK  center  1
+ARIMA-3,0,3-1,0,1s-WEEK  cycle  7
+ARIMA-3,0,3-1,0,1s-WEEK  ndays_back  0
+ARIMA-3,0,3-1,0,1s-WEEK  spike_filter  14
+
+ARIMA-0,1,1-0,1,1s-YEAR  desc  Seasonal cycle of 365 ARIMA (0,1,1)(0,1,1)s with centered forecast
+ARIMA-0,1,1-0,1,1s-YEAR  model  model_arima
+ARIMA-0,1,1-0,1,1s-YEAR  arima  (0,1,1)(0,1,1)s
+ARIMA-0,1,1-0,1,1s-YEAR  center  1
+ARIMA-0,1,1-0,1,1s-YEAR  cycle  364
+ARIMA-0,1,1-0,1,1s-YEAR  ndays_back  0
+ARIMA-0,1,1-0,1,1s-YEAR  spike_filter  14
+
+ARIMA-0,1,2-0,1,1s-YEAR  desc  Seasonal cycle of 365 ARIMA (0,1,2)(0,1,1)s with centered forecast
+ARIMA-0,1,2-0,1,1s-YEAR  model  model_arima
+ARIMA-0,1,2-0,1,1s-YEAR  arima  (0,1,2)(0,1,1)s
+ARIMA-0,1,2-0,1,1s-YEAR  center  1
+ARIMA-0,1,2-0,1,1s-YEAR  cycle  364
+ARIMA-0,1,2-0,1,1s-YEAR  ndays_back  0
+ARIMA-0,1,2-0,1,1s-YEAR  spike_filter  14
+
+ARIMA-1,1,1-1,1,1s-YEAR  desc  Seasonal cycle of 365 ARIMA (1,1,1)(1,1,1)s with centered forecast
+ARIMA-1,1,1-1,1,1s-YEAR  model  model_arima
+ARIMA-1,1,1-1,1,1s-YEAR  arima  (1,1,1)(1,1,1)s
+ARIMA-1,1,1-1,1,1s-YEAR  center  1
+ARIMA-1,1,1-1,1,1s-YEAR  cycle  364
+ARIMA-1,1,1-1,1,1s-YEAR  ndays_back  0
+ARIMA-1,1,1-1,1,1s-YEAR  spike_filter  14
+
+ARIMA-2,1,0-1,0,0s-YEAR  desc  Seasonal cycle of 365 ARIMA (2,1,0)(1,0,0)s with centered forecast
+ARIMA-2,1,0-1,0,0s-YEAR  model  model_arima
+ARIMA-2,1,0-1,0,0s-YEAR  arima  (2,1,0)(1,0,0)s
+ARIMA-2,1,0-1,0,0s-YEAR  center  1
+ARIMA-2,1,0-1,0,0s-YEAR  cycle  364
+ARIMA-2,1,0-1,0,0s-YEAR  ndays_back  0
+ARIMA-2,1,0-1,0,0s-YEAR  spike_filter  14
+
+ARIMA-2,1,2-0,1,1s-YEAR  desc  Seasonal cycle of 365 ARIMA (2,1,2)(0,1,1)s with centered forecast
+ARIMA-2,1,2-0,1,1s-YEAR  model  model_arima
+ARIMA-2,1,2-0,1,1s-YEAR  arima  (2,1,2)(0,1,1)s
+ARIMA-2,1,2-0,1,1s-YEAR  center  1
+ARIMA-2,1,2-0,1,1s-YEAR  cycle  364
+ARIMA-2,1,2-0,1,1s-YEAR  ndays_back  0
+ARIMA-2,1,2-0,1,1s-YEAR  spike_filter  14
+
+AVG-NONE-14  desc  Moving average with a window of 14
+AVG-NONE-14  model  model_movavg
+AVG-NONE-14  ndays_back  z.10
+AVG-NONE-14  spike_filter  14
+AVG-NONE-14  window  14
+
+AVG-NONE-14-NEW  desc  Moving average with a window of 14 and a spike filter window of 3
+AVG-NONE-14-NEW  model  model_movavg
+AVG-NONE-14-NEW  spike_filter  3
+AVG-NONE-14-NEW  window  14
+
+AVG-NONE-28  desc  Moving average with a window of 28
+AVG-NONE-28  model  model_movavg
+AVG-NONE-28  ndays_back  z.10
+AVG-NONE-28  spike_filter  14
+AVG-NONE-28  window  28
+
+AVG-NONE-28-NSF  desc  Moving average with a window of 28 and spike filter disabled
+AVG-NONE-28-NSF  model  model_movavg
+AVG-NONE-28-NSF  ndays_back  z.10
+AVG-NONE-28-NSF  spike_filter  0
+AVG-NONE-28-NSF  window  28
+
+AVG-NONE-28-NEW  desc  Moving average with a window of 28 and a spike filter window of 3
+AVG-NONE-28-NEW  model  model_movavg
+AVG-NONE-28-NEW  ndays_back  z.10
+AVG-NONE-28-NEW  spike_filter  3
+AVG-NONE-28-NEW  window  28
+
+EXP-ADD-MULT-WEEK  desc  Exponential smoothing with a linear trend and multiplicative seasonality with a cycle of 7
+EXP-ADD-MULT-WEEK  model  model_expsm
+EXP-ADD-MULT-WEEK  cycle  7
+EXP-ADD-MULT-WEEK  ndays_back  56
+EXP-ADD-MULT-WEEK  seasonality_type  mult
+EXP-ADD-MULT-WEEK  spike_filter  14
+EXP-ADD-MULT-WEEK  trend_type  linear
+
+EXP-DA-ADD-AUTO  desc  Exponential smoothing with an additive damped trend and additive seasonality with auto-detect cycle
+EXP-DA-ADD-AUTO  model  model_expsm
+EXP-DA-ADD-AUTO  cycle  -1
+EXP-DA-ADD-AUTO  ndays_back  56
+EXP-DA-ADD-AUTO  seasonality_type  add
+EXP-DA-ADD-AUTO  spike_filter  14
+EXP-DA-ADD-AUTO  trend_type  dampedadd
+
+EXP-DA-ADD-WEEK  desc  Exponential smoothing with an additive damped trend and additive seasonality with a cycle of 7
+EXP-DA-ADD-WEEK  model  model_expsm
+EXP-DA-ADD-WEEK  cycle  7
+EXP-DA-ADD-WEEK  ndays_back  56
+EXP-DA-ADD-WEEK  seasonality_type  add
+EXP-DA-ADD-WEEK  spike_filter  14
+EXP-DA-ADD-WEEK  trend_type  dampedadd
+
+EXP-DA-ADD-YEAR  desc  Exponential smoothing with an additive damped trend and additive seasonality with a cycle of 364
+EXP-DA-ADD-YEAR  model  model_expsm
+EXP-DA-ADD-YEAR  cycle  364
+EXP-DA-ADD-YEAR  ndays_back  730
+EXP-DA-ADD-YEAR  seasonality_type  add
+EXP-DA-ADD-YEAR  spike_filter  14
+EXP-DA-ADD-YEAR  trend_type  dampedadd
+
+EXP-DA-MULT-AUTO  desc  Exponential smoothing with an additive damped trend and multiplicative seasonality with auto-detect cycle
+EXP-DA-MULT-AUTO  model  model_expsm
+EXP-DA-MULT-AUTO  cycle  -1
+EXP-DA-MULT-AUTO  ndays_back  56
+EXP-DA-MULT-AUTO  seasonality_type  mult
+EXP-DA-MULT-AUTO  spike_filter  14
+EXP-DA-MULT-AUTO  trend_type  dampedadd
+
+EXP-DA-MULT-WEEK  desc  Exponential smoothing with an additive damped trend and multiplicative seasonality with a cycle of 7
+EXP-DA-MULT-WEEK  model  model_expsm
+EXP-DA-MULT-WEEK  cycle  7
+EXP-DA-MULT-WEEK  ndays_back  56
+EXP-DA-MULT-WEEK  seasonality_type  mult
+EXP-DA-MULT-WEEK  spike_filter  14
+EXP-DA-MULT-WEEK  trend_type  dampedadd
+
+EXP-DA-MULT-YEAR  desc  Exponential smoothing with an additive damped trend and multiplicative seasonality with a cycle of 364
+EXP-DA-MULT-YEAR  model  model_expsm
+EXP-DA-MULT-YEAR  cycle  364
+EXP-DA-MULT-YEAR  ndays_back  730
+EXP-DA-MULT-YEAR  seasonality_type  mult
+EXP-DA-MULT-YEAR  spike_filter  14
+EXP-DA-MULT-YEAR  trend_type  dampedadd
+
+EXP-DA-NONE  desc  Exponential smoothing with an additive damped trend and no seasonality
+EXP-DA-NONE  model  model_expsm
+EXP-DA-NONE  ndays_back  z.10
+EXP-DA-NONE  spike_filter  14
+EXP-DA-NONE  trend_type  dampedadd
+
+EXP-DM-ADD-AUTO  desc  Exponential smoothing with a multiplicative damped trend and additive seasonality with auto-detect cycle
+EXP-DM-ADD-AUTO  model  model_expsm
+EXP-DM-ADD-AUTO  cycle  -1
+EXP-DM-ADD-AUTO  ndays_back  56
+EXP-DM-ADD-AUTO  seasonality_type  add
+EXP-DM-ADD-AUTO  spike_filter  14
+EXP-DM-ADD-AUTO  trend_type  dampedmult
+
+EXP-DM-ADD-WEEK  desc  Exponential smoothing with a multiplicative damped trend and additive seasonality with a cycle of 7
+EXP-DM-ADD-WEEK  model  model_expsm
+EXP-DM-ADD-WEEK  cycle  7
+EXP-DM-ADD-WEEK  ndays_back  56
+EXP-DM-ADD-WEEK  seasonality_type  add
+EXP-DM-ADD-WEEK  spike_filter  14
+EXP-DM-ADD-WEEK  trend_type  dampedmult
+
+EXP-DM-ADD-YEAR  desc  Exponential smoothing with a multiplicative damped trend and additive seasonality with a cycle of 364
+EXP-DM-ADD-YEAR  model  model_expsm
+EXP-DM-ADD-YEAR  cycle  364
+EXP-DM-ADD-YEAR  ndays_back  730
+EXP-DM-ADD-YEAR  seasonality_type  add
+EXP-DM-ADD-YEAR  spike_filter  14
+EXP-DM-ADD-YEAR  trend_type  dampedmult
+
+EXP-DM-MULT-AUTO  desc  Exponential smoothing with a multiplicative damped trend and multiplicative seasonality with auto-detect cycle
+EXP-DM-MULT-AUTO  model  model_expsm
+EXP-DM-MULT-AUTO  cycle  -1
+EXP-DM-MULT-AUTO  ndays_back  56
+EXP-DM-MULT-AUTO  seasonality_type  mult
+EXP-DM-MULT-AUTO  spike_filter  14
+EXP-DM-MULT-AUTO  trend_type  dampedmult
+
+EXP-DM-MULT-WEEK  desc  Exponential smoothing with a multiplicative damped trend and multiplicative seasonality with a cycle of 7
+EXP-DM-MULT-WEEK  model  model_expsm
+EXP-DM-MULT-WEEK  cycle  7
+EXP-DM-MULT-WEEK  ndays_back  56
+EXP-DM-MULT-WEEK  seasonality_type  mult
+EXP-DM-MULT-WEEK  spike_filter  14
+EXP-DM-MULT-WEEK  trend_type  dampedmult
+
+EXP-DM-MULT-YEAR  desc  Exponential smoothing with a multiplicative damped trend and multiplicative seasonality with a cycle of 364
+EXP-DM-MULT-YEAR  model  model_expsm
+EXP-DM-MULT-YEAR  cycle  364
+EXP-DM-MULT-YEAR  ndays_back  730
+EXP-DM-MULT-YEAR  seasonality_type  mult
+EXP-DM-MULT-YEAR  spike_filter  14
+EXP-DM-MULT-YEAR  trend_type  dampedmult
+
+EXP-DM-NONE  desc  Exponential smoothing with a multiplicative damped trend and no seasonality
+EXP-DM-NONE  model  model_expsm
+EXP-DM-NONE  ndays_back  z.10
+EXP-DM-NONE  spike_filter  14
+EXP-DM-NONE  trend_type  dampedmult
+
+EXP-NONE-ADD-AUTO  desc  Exponential smoothing with no trend and additive seasonality with auto-detect cycle
+EXP-NONE-ADD-AUTO  model  model_expsm
+EXP-NONE-ADD-AUTO  cycle  -1
+EXP-NONE-ADD-AUTO  ndays_back  56
+EXP-NONE-ADD-AUTO  seasonality_type  add
+EXP-NONE-ADD-AUTO  spike_filter  14
+
+EXP-NONE-ADD-WEEK  desc  Exponential smoothing with no trend and additive seasonality with a cycle of 7
+EXP-NONE-ADD-WEEK  model  model_expsm
+EXP-NONE-ADD-WEEK  cycle  7
+EXP-NONE-ADD-WEEK  ndays_back  56
+EXP-NONE-ADD-WEEK  seasonality_type  add
+EXP-NONE-ADD-WEEK  spike_filter  14
+
+EXP-NONE-ADD-WEEK-NEW  desc  Exponential smoothing with no trend and additive seasonality with a cycle of 7 and a spike filter window of 3
+EXP-NONE-ADD-WEEK-NEW  model  model_expsm
+EXP-NONE-ADD-WEEK-NEW  cycle  7
+EXP-NONE-ADD-WEEK-NEW  seasonality_type  add
+EXP-NONE-ADD-WEEK-NEW  spike_filter  3
+
+EXP-NONE-ADD-YEAR  desc  Exponential smoothing with no trend and additive seasonality with a cycle of 364
+EXP-NONE-ADD-YEAR  model  model_expsm
+EXP-NONE-ADD-YEAR  cycle  364
+EXP-NONE-ADD-YEAR  ndays_back  730
+EXP-NONE-ADD-YEAR  seasonality_type  add
+EXP-NONE-ADD-YEAR  spike_filter  14
+
+EXP-NONE-MULT-AUTO  desc  Exponential smoothing with no trend and multiplicative seasonality with auto-detect cycle
+EXP-NONE-MULT-AUTO  model  model_expsm
+EXP-NONE-MULT-AUTO  cycle  -1
+EXP-NONE-MULT-AUTO  ndays_back  56
+EXP-NONE-MULT-AUTO  seasonality_type  mult
+EXP-NONE-MULT-AUTO  spike_filter  14
+
+EXP-NONE-MULT-WEEK  desc  Exponential smoothing with no trend and multiplicative seasonality with a cycle of 7
+EXP-NONE-MULT-WEEK  model  model_expsm
+EXP-NONE-MULT-WEEK  cycle  7
+EXP-NONE-MULT-WEEK  ndays_back  56
+EXP-NONE-MULT-WEEK  seasonality_type  mult
+EXP-NONE-MULT-WEEK  spike_filter  14
+
+EXP-NONE-MULT-YEAR  desc  Exponential smoothing with no trend and multiplicative seasonality with a cycle of 364
+EXP-NONE-MULT-YEAR  model  model_expsm
+EXP-NONE-MULT-YEAR  cycle  364
+EXP-NONE-MULT-YEAR  ndays_back  730
+EXP-NONE-MULT-YEAR  seasonality_type  mult
+EXP-NONE-MULT-YEAR  spike_filter  14
+
+EXP-NONE-NONE  desc Exponential smoothing with no trend and no seasonality
+EXP-NONE-NONE  model  model_expsm
+EXP-NONE-NONE  ndays_back  56
+EXP-NONE-NONE  spike_filter  14
+
+REG-NONE-ADD-AUTO  desc  Regression with no trend and additive seasonality with auto-detect cycle
+REG-NONE-ADD-AUTO  model  model_regress
+REG-NONE-ADD-AUTO  cycle  -1
+REG-NONE-ADD-AUTO  ndays_back  56
+REG-NONE-ADD-AUTO  seasonality_type  add
+REG-NONE-ADD-AUTO  spike_filter  14
+
+REG-NONE-ADD-AUTO-NEW  desc  Regression with no trend and additive seasonality with auto-detect cycle and a spike filter window of 3
+REG-NONE-ADD-AUTO-NEW  model  model_regress
+REG-NONE-ADD-AUTO-NEW  cycle  -1
+REG-NONE-ADD-AUTO-NEW  ndays_back  56
+REG-NONE-ADD-AUTO-NEW  seasonality_type  add
+REG-NONE-ADD-AUTO-NEW  spike_filter  3
+
+REG-NONE-ADD-WEEK  desc  Regression with no trend and additive seasonality with a cycle of 7
+REG-NONE-ADD-WEEK  model  model_regress
+REG-NONE-ADD-WEEK  cycle  7
+REG-NONE-ADD-WEEK  ndays_back  56
+REG-NONE-ADD-WEEK  seasonality_type  add
+REG-NONE-ADD-WEEK  spike_filter  14
+
+REG-NONE-ADD-WEEK-LOG  desc  Regression with log transformed series, no trend, and additive seasonality with a cycle of 7
+REG-NONE-ADD-WEEK-LOG  model  model_regress
+REG-NONE-ADD-WEEK-LOG  cycle  7
+REG-NONE-ADD-WEEK-LOG  ndays_back  56
+REG-NONE-ADD-WEEK-LOG  seasonality_type  add
+REG-NONE-ADD-WEEK-LOG  spike_filter  14
+REG-NONE-ADD-WEEK-LOG  transform_type  log
+
+REG-NONE-ADD-WEEK-SAG  desc  Regression with no trend and additive seasonality with a cycle of 7 and a spike filter window of 3
+REG-NONE-ADD-WEEK-SAG  model  model_regress
+REG-NONE-ADD-WEEK-SAG  cycle  7
+REG-NONE-ADD-WEEK-SAG  ndays_back  56
+REG-NONE-ADD-WEEK-SAG  seasonality_type  add
+REG-NONE-ADD-WEEK-SAG  spike_filter  3
+
+REG-NONE-ADD-YEAR  desc  Regression with no trend and additive seasonality with a cycle of 365
+REG-NONE-ADD-YEAR  model  model_regress
+REG-NONE-ADD-YEAR  cycle  365
+REG-NONE-ADD-YEAR  ndays_back  730
+REG-NONE-ADD-YEAR  seasonality_type  add
+REG-NONE-ADD-YEAR  spike_filter  14
+
+REG-NONE-CONST1-AUTO  desc  Regression with no trend and sine-cosine seasonality with auto-detect cycle
+REG-NONE-CONST1-AUTO  model  model_regress
+REG-NONE-CONST1-AUTO  cycle  -1
+REG-NONE-CONST1-AUTO  ndays_back  56
+REG-NONE-CONST1-AUTO  seasonality_type  const1
+REG-NONE-CONST1-AUTO  spike_filter  14
+
+REG-NONE-CONST1-WEEK  desc  Regression with no trend and sine-cosine seasonality with a cycle of 7
+REG-NONE-CONST1-WEEK  model  model_regress
+REG-NONE-CONST1-WEEK  cycle  7
+REG-NONE-CONST1-WEEK  ndays_back  56
+REG-NONE-CONST1-WEEK  seasonality_type  const1
+REG-NONE-CONST1-WEEK  spike_filter  14
+
+REG-NONE-CONST1-WEEK-LOG  desc  Regression with log transformed series having no trend and sine-cosine seasonality with a cycle of 7
+REG-NONE-CONST1-WEEK-LOG  model  model_regress
+REG-NONE-CONST1-WEEK-LOG  cycle  7
+REG-NONE-CONST1-WEEK-LOG  ndays_back  56
+REG-NONE-CONST1-WEEK-LOG  seasonality_type  const1
+REG-NONE-CONST1-WEEK-LOG  spike_filter  14
+REG-NONE-CONST1-WEEK-LOG  transform_type  log
+
+REG-NONE-CONST1-YEAR  desc  Regression with no trend and sine-cosine seasonality with a cycle of 365
+REG-NONE-CONST1-YEAR  model  model_regress
+REG-NONE-CONST1-YEAR  cycle  365
+REG-NONE-CONST1-YEAR  ndays_back  730
+REG-NONE-CONST1-YEAR  seasonality_type  const1
+REG-NONE-CONST1-YEAR  spike_filter  14
+
+REG-NONE-CONST2-AUTO  desc  Regression with no trend and two-part sine-cosine seasonality with auto-detect cycle
+REG-NONE-CONST2-AUTO  model  model_regress
+REG-NONE-CONST2-AUTO  cycle  -1
+REG-NONE-CONST2-AUTO  ndays_back  56
+REG-NONE-CONST2-AUTO  seasonality_type  const2
+REG-NONE-CONST2-AUTO  spike_filter  14
+
+REG-NONE-CONST2-WEEK  desc  Regression with no trend and two-part sine-cosine seasonality with a cycle of 7
+REG-NONE-CONST2-WEEK  model  model_regress
+REG-NONE-CONST2-WEEK  cycle  7
+REG-NONE-CONST2-WEEK  ndays_back  56
+REG-NONE-CONST2-WEEK  seasonality_type  const2
+REG-NONE-CONST2-WEEK  spike_filter  14
+
+REG-NONE-CONST2-YEAR  desc  Regression with no trend and two-part sine-cosine seasonality with a cycle of 365
+REG-NONE-CONST2-YEAR  model  model_regress
+REG-NONE-CONST2-YEAR  cycle  365
+REG-NONE-CONST2-YEAR  ndays_back  730
+REG-NONE-CONST2-YEAR  seasonality_type  const2
+REG-NONE-CONST2-YEAR  spike_filter  14
+
+REG-NONE-INCRS1-WEEK  desc  Regression with no trend and increasing amplitude sine-cosine seasonality with a cycle of 7
+REG-NONE-INCRS1-WEEK  model  model_regress
+REG-NONE-INCRS1-WEEK  cycle  7
+REG-NONE-INCRS1-WEEK  ndays_back  56
+REG-NONE-INCRS1-WEEK  seasonality_type  incrs1
+
+REG-NONE-NONE  desc  Regression with no trend and no seasonality
+REG-NONE-NONE  model  model_regress
+REG-NONE-NONE  ndays_back  56
+REG-NONE-NONE  spike_filter  14
+
+REG-NONE-PHASE2-SPLICE-WEEK  desc  Regression with no trend and 2-phase sine-cosine seasonality with a first cycle of 7 and a second cycle of 3
+REG-NONE-PHASE2-SPLICE-WEEK  model  model_regress
+REG-NONE-PHASE2-SPLICE-WEEK  cycle  7
+REG-NONE-PHASE2-SPLICE-WEEK  cycle2  3
+REG-NONE-PHASE2-SPLICE-WEEK  ndays_back  56
+REG-NONE-PHASE2-SPLICE-WEEK  seasonality_type  const3
+REG-NONE-PHASE2-SPLICE-WEEK  spike_filter  14
+
+REG-NONE-PHASE2-WEEK-YEAR  desc  Regression with no trend and 2-phase sine-cosine seasonality with a first cycle of 365 and a second cycle of 7
+REG-NONE-PHASE2-WEEK-YEAR  model  model_regress
+REG-NONE-PHASE2-WEEK-YEAR  cycle  365
+REG-NONE-PHASE2-WEEK-YEAR  cycle2  7
+REG-NONE-PHASE2-WEEK-YEAR  ndays_back  730
+REG-NONE-PHASE2-WEEK-YEAR  seasonality_type  const3
+REG-NONE-PHASE2-WEEK-YEAR  spike_filter  14
+
+RW-NONE-AUTO  desc  Random walk with seasonality having auto-detect cycle
+RW-NONE-AUTO  model  model_rw
+RW-NONE-AUTO  cycle  -1
+RW-NONE-AUTO  ndays_back  56
+RW-NONE-AUTO  spike_filter  14
+
+RW-NONE-NONE  desc  Random walk with no seasonality
+RW-NONE-NONE  model  model_rw
+RW-NONE-NONE  ndays_back  z.10
+RW-NONE-NONE  spike_filter  14
+
+RW-NONE-WEEK  desc  Random walk with seasonality having a cycle of 7
+RW-NONE-WEEK  model  model_rw
+RW-NONE-WEEK  cycle  7
+RW-NONE-WEEK  ndays_back  56
+RW-NONE-WEEK  spike_filter  14
+
+RW-NONE-DAY  desc  Random walk with day by day seasonality
+RW-NONE-DAY  model  model_rw
+RW-NONE-DAY  cycle  24
+RW-NONE-DAY  ndays_back  0
+RW-NONE-DAY  spike_filter  0
+
+RW-NONE-DAY-WEEK  desc  Random walk with day and week seasonality
+RW-NONE-DAY-WEEK  model  model_rw
+RW-NONE-DAY-WEEK  cycle  168
+RW-NONE-DAY-WEEK  ndays_back  0
+RW-NONE-DAY-WEEK  spike_filter  0
+
+ARIMA-0,2,2-0,1,1s-DAY  desc  ARIMA (0,0,0)(0,0,1)s with day seasonality
+ARIMA-0,2,2-0,1,1s-DAY  model  model_arima
+ARIMA-0,2,2-0,1,1s-DAY  arima  (0,2,2)(0,1,1)s
+ARIMA-0,2,2-0,1,1s-DAY  center  1
+ARIMA-0,2,2-0,1,1s-DAY  cycle  24
+ARIMA-0,2,2-0,1,1s-DAY  ndays_back  0
+ARIMA-0,2,2-0,1,1s-DAY  spike_filter  0
+
+REG-NONE-ADD-DAY  desc  Regression with no trend and additive day seasonality
+REG-NONE-ADD-DAY  model  model_regress
+REG-NONE-ADD-DAY  cycle  24
+REG-NONE-ADD-DAY  ndays_back  0
+REG-NONE-ADD-DAY  seasonality_type  add
+REG-NONE-ADD-DAY  spike_filter  0
+REG-NONE-ADD-DAY  polynomial_degree  1
+
+REG-LINEAR-ADD-DAY  desc  Regression with linear trend and additive day seasonality
+REG-LINEAR-ADD-DAY  model  model_regress
+REG-LINEAR-ADD-DAY  cycle  24
+REG-LINEAR-ADD-DAY  ndays_back  0
+REG-LINEAR-ADD-DAY  seasonality_type  add
+REG-LINEAR-ADD-DAY  spike_filter  0
+REG-LINEAR-ADD-DAY  polynomial_degree  1
+
+REG-LINEAR-ADD-DAY-WEEK  desc  Regression with linear trend and additive day and week seasonality
+REG-LINEAR-ADD-DAY-WEEK  model  model_regress
+REG-LINEAR-ADD-DAY-WEEK  cycle  168
+REG-LINEAR-ADD-DAY-WEEK  ndays_back  0
+REG-LINEAR-ADD-DAY-WEEK  seasonality_type  add
+REG-LINEAR-ADD-DAY-WEEK  spike_filter  0
+REG-LINEAR-ADD-DAY-WEEK  polynomial_degree  1
+
+REG-LINEAR-ADD-DAY-LOG  desc  Regression with log transformed series, linear trend, and additive day seasonality
+REG-LINEAR-ADD-DAY-LOG  model  model_regress
+REG-LINEAR-ADD-DAY-LOG  cycle  24
+REG-LINEAR-ADD-DAY-LOG  ndays_back  0
+REG-LINEAR-ADD-DAY-LOG  seasonality_type  add
+REG-LINEAR-ADD-DAY-LOG  spike_filter  0
+REG-LINEAR-ADD-DAY-LOG  transform_type  log
+REG-LINEAR-ADD-DAY-LOG  polynomial_degree  1
+
+REG-LINEAR-ADD-DAY-WEEK-LOG  desc  Regression with log transformed series, linear trend, and additive day and week seasonality
+REG-LINEAR-ADD-DAY-WEEK-LOG  model  model_regress
+REG-LINEAR-ADD-DAY-WEEK-LOG  cycle  198
+REG-LINEAR-ADD-DAY-WEEK-LOG  ndays_back  0
+REG-LINEAR-ADD-DAY-WEEK-LOG  seasonality_type  add
+REG-LINEAR-ADD-DAY-WEEK-LOG  spike_filter  0
+REG-LINEAR-ADD-DAY-WEEK-LOG  transform_type  log
+REG-LINEAR-ADD-DAY-WEEK-LOG  polynomial_degree  1
+
+EXP-LINEAR-MULT-YEAR  desc  Exponential smoothing with an linear trend and additive seasonality with a cycle of 365
+EXP-LINEAR-MULT-YEAR  model  model_expsm
+EXP-LINEAR-MULT-YEAR  cycle  365
+EXP-LINEAR-MULT-YEAR  ndays_back  0
+EXP-LINEAR-MULT-YEAR  seasonality_type  mult
+EXP-LINEAR-MULT-YEAR  spike_filter  14
+EXP-LINEAR-MULT-YEAR  trend_type  linear
+
+REG-LINEAR-ADD-YEAR  desc  Regression with linear trend and additive day seasonality
+REG-LINEAR-ADD-YEAR  model  model_regress
+REG-LINEAR-ADD-YEAR  cycle  365
+REG-LINEAR-ADD-YEAR  ndays_back  0
+REG-LINEAR-ADD-YEAR  seasonality_type  add
+REG-LINEAR-ADD-YEAR  spike_filter  0
+REG-LINEAR-ADD-YEAR  polynomial_degree  1

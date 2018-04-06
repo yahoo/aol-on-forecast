@@ -1,0 +1,26 @@
+{
+  "timeSeries": [
+    400.0,
+    500.0,
+    500.0,
+    400.0,
+    400.0,
+    300.0,
+    0.0,
+    350.0,
+    300.0,
+    300.0,
+    300.0,
+    300.0,
+    300.0,
+    300.0
+  ],
+  "horizon": 3,
+  "expectedConfidence": 6.53,
+  "allowForecastPercentError": 1.0,
+  "expectedForecast": [
+    389.0,
+    464.0,
+    506.0
+  ]
+}
