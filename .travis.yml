@@ -13,5 +13,4 @@ matrix:
         - cd server
         - docker login -u=$DOCKERHUB_UNAME -p=$DOCKERHUB_PASS
       script:
-        - mvn clean install docker:build
-        - docker push vidible/forecast-api:2.0.0
+        - mvn clean install docker:build && docker push vidible/forecast-api:2.0.0
