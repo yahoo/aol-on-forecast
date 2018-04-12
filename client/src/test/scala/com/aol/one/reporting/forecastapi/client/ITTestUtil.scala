@@ -12,7 +12,7 @@ import org.scalatest.FreeSpec
 
 object ITTestUtil extends FreeSpec {
 
-  private val forecastClient = new ForecastClientImpl()
+  private val forecastClient = new ForecastClientImpl(serviceUrl)
   private val plotActual = ConfigUtil.getConfig().getBoolean("plot-actual")
 
   def testForecast(scenarioId: String, plotIfEnabled: Boolean = true): Unit = {
@@ -71,6 +71,8 @@ object ITTestUtil extends FreeSpec {
 
     sys.process.Process(Seq("python", "plot_results.py", scenarioId, historical, actual), new java.io.File("./src/test/resources/scripts")).!!
   }
+
+  private def serviceUrl = sys.env("FORECAST_API_SERVICE_URL")
 
   case class TestCase(@JsonProperty("timeSeries") timeSeries: Array[Double],
                       @JsonProperty("horizon") horizon: Int,

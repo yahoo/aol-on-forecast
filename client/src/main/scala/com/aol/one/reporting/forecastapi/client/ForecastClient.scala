@@ -31,8 +31,6 @@ class ForecastClientImpl(client: ForecastHttpClient) extends ForecastClient {
 
   def this(serviceUrl: String) = this(new ForecastHttpClientImpl(serviceUrl))
 
-  def this() = this(new ForecastHttpClientImpl(ConfigUtil.getConfig().getString("default-service-url")))
-
   private val objectMapper = new ObjectMapper()
   objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
 
