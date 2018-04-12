@@ -6,7 +6,7 @@ version := "3.1.1"
 
 organization := "com.aol.one.reporting"
 
-enablePlugins(RepositoryPlugin)
+publishMavenStyle := true
 
 libraryDependencies ++= Seq(
   "com.fasterxml.jackson.core" % "jackson-databind" % "2.3.5",
