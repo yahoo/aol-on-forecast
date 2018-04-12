@@ -10,7 +10,7 @@ data for the past month.
 
 Run using Docker
 
-    docker run --name forecast-api -p=9072:8080 vidible/forecast-api:1.0.0
+    docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.0
 
 Or build from source
 

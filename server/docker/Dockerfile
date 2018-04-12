@@ -1,4 +1,5 @@
-FROM tomcat
+FROM tomcat:8-jre8-alpine
+
 ADD tomcat-users.xml $CATALINA_HOME/conf
 
 HEALTHCHECK CMD curl --fail http://localhost:8080/forecast-api/health || exit 1
