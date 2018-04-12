@@ -6,8 +6,6 @@ matrix:
         - cd client
       script:
         - sbt publishSigned sonatypeRelease
-docker login -u=vidible -p=88337DKS0_Dss  mavenTask tasks: 'clean install docker:build', localRepo: 'true'
-                        sh 'docker push main-virtual.docker.vidible.aolcloud.net/main/forecast-api:2.0.0'
 
   include:
     - language: java
@@ -16,4 +14,4 @@ docker login -u=vidible -p=88337DKS0_Dss  mavenTask tasks: 'clean install docker
         - docker login -u=$DOCKERHUB_UNAME -p=$DOCKERHUB_PASS
       script:
         - mvn clean install docker:build
-        - sh 'docker push main-virtual.docker.vidible.aolcloud.net/main/forecast-api:2.0.0'
+        - sh 'docker push vidible/forecast-api:2.0.0'
