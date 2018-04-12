@@ -14,4 +14,4 @@ matrix:
         - docker login -u=$DOCKERHUB_UNAME -p=$DOCKERHUB_PASS
       script:
         - mvn clean install docker:build
-        - sh 'docker push vidible/forecast-api:2.0.0'
+        - docker push vidible/forecast-api:2.0.0
