@@ -1,7 +1,11 @@
 language: scala
-scala: 2.11.8
+
+scala:
+  - 2.11.8
+
 before_script:
   - docker login -u=$DOCKERHUB_UNAME -p=$DOCKERHUB_PASS
+
 script:
   - cd client && sbt publishSigned sonatypeRelease
   - cd server && mvn clean install docker:build && docker push vidible/forecast-api:2.0.0
