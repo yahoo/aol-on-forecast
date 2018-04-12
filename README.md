@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vidible/aol-on-forecast.svg?branch=master)](https://travis-ci.org/vidible/aol-on-forecast)
+
 ### Forecast API
 
 Forecast API is a REST service for making time-series forecasting. 
