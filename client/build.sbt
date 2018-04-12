@@ -24,3 +24,45 @@ libraryDependencies ++= Seq(
 coverageEnabled in(Test, compile) := true
 coverageEnabled in(Compile, compile) := false
 coverageFailOnMinimum := true
+
+useGpg := false
+usePgpKeyHex("9CE03909AE4C7C0A")
+pgpPublicRing := baseDirectory.value / "project" / ".gnupg" / "pubring.gpg"
+pgpSecretRing := baseDirectory.value / "project" / ".gnupg" / "secring.gpg"
+pgpPassphrase := sys.env.get("PGP_PASS").map(_.toArray)
+
+
+sonatypeProfileName := organization.value
+
+credentials += Credentials(
+  "Sonatype Nexus Repository Manager",
+  "oss.sonatype.org",
+  sys.env.getOrElse("SONATYPE_USER", ""),
+  sys.env.getOrElse("SONATYPE_PASS", "")
+)
+
+isSnapshot := version.value endsWith "SNAPSHOT"
+
+publishTo := Some(
+  if (isSnapshot.value)
+    Opts.resolver.sonatypeSnapshots
+  else
+    Opts.resolver.sonatypeStaging
+)
+
+licenses := Seq("MIT" -> url("https://www.apache.org/licenses/LICENSE-2.0"))
+homepage := Some(url("https://github.com/vidible/aol-on-forecast"))
+
+scmInfo := Some(
+  ScmInfo(
+    url("https://github.com/vidible/aol-on-forecast"),
+    "scm:git@github.com/vidible/aol-on-forecast.git"
+  ))
+
+developers := List(
+  Developer(
+    id="One Reporting Team",
+    name="One Reporting Team",
+    email="noreply@oath.org",
+    url=url("https://github.com/vidible")
+  ))
