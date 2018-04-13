@@ -3,13 +3,16 @@ language: scala
 scala:
   - 2.11.8
 
-before_script:
-  - docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.0 &
+services:
+  - docker
 
 script:
-  - cd client && sbt compile test
+  # Build server
   - cd ../server && mvn clean install docker:build
+  # Build client and run tests against server
+  - docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.0 &
+  - cd client && sbt compile test
+  - docker kill forecast-api
 
 after_success:
-  - docker kill forecast-api
   - cd ../ && ./script/deploy.sh
