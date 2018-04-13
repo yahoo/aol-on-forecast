@@ -2,7 +2,7 @@ name := "forecast-api-client"
 
 scalaVersion := "2.11.8"
 
-version := "3.1.3"
+version := "3.1.4"
 
 organization := "com.aol.one.reporting"
 
