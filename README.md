@@ -55,18 +55,6 @@ val forecast = client.forecast(Array(1, 2, 3, 4, 3, 2, 1, 1, 2, 3, 4, 3, 2, 1), 
 ## Docs
 Swagger docs can be found at [http://localhost:9072/forecast-ap|http://localhost:9072/forecast-api]. 
 
-### Build from source
-
-To build server:
-
-    cd server
-    mvn install
-
-To build client:
-
-    cd client
-    sbt compile
-
 ### Example scenarios
 
 Here are some forecast scenarios. Solid line shows historical data and dotted lines are forecasts. 
@@ -76,6 +64,21 @@ Here are some forecast scenarios. Solid line shows historical data and dotted li
 ![](https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal-with-trend/plot-raw-and-actual.png | width=100)
 
 ![](https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/real-data-video-view-supply-with-trend/plot-raw-and-actual.png | width=100)
+
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+
+### Build from source
+
+Server:
+
+    cd server
+    mvn install
+
+Client:
+
+    cd client
+    sbt compile
+
 
 ### License
 Forecast API is released under the Apache License, Version 2.0
