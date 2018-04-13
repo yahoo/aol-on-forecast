@@ -59,11 +59,11 @@ Swagger docs can be found at [http://localhost:9072/forecast-ap|http://localhost
 
 Here are some forecast scenarios. Solid line shows historical data and dotted lines are forecasts. 
 
-<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal/plot-raw-and-actual.png" width="48">
+<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal/plot-raw-and-actual.png" width="400">
 
-<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal-with-trend/plot-raw-and-actual.png" width="48">
+<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal-with-trend/plot-raw-and-actual.png" width="400">
 
-<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/real-data-video-view-supply-with-trend/plot-raw-and-actual.png" width="48">
+<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/real-data-video-view-supply-with-trend/plot-raw-and-actual.png" width="400">
 
 ### Build from source
 
