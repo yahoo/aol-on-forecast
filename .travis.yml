@@ -12,8 +12,5 @@ script:
   # Build server and push image to Dockerhub
   - cd ../server && echo "build server" #&& mvn clean install docker:build && docker push vidible/forecast-api:2.0.0
 
-deploy:
-  provider: script
-  script: ./deploy.sh #cd client && echo "deploy client" && cd ../server && echo "deploy server"
-  on:
-    branch: master
+after_success:
+  - ./script/deploy.sh #cd client && echo "deploy client" && cd ../server && echo "deploy server"
