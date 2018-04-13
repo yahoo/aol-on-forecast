@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if [ "$TRAVIS_BRANCH" == "master" ]; then
   echo "pushing client artifact to Maven Central"
   cd client
