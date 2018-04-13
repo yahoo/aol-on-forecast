@@ -10,15 +10,12 @@ data for the past month.
 
 ### Quickstart
 
-Run docker image
+Run the forecast-api docker image and make a rest call to get forecasts
 
     docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.0
-
-Make a rest call to get forecasts
-
     curl -X POST -H "Content-Type: application/json" -d '{ "timeSeries": [ 0, 1, 2, 3, 2, 1, 0, 0, 1, 2, 3, 2, 1, 0, 0 ], "cannedSets": ["REG-NONE-ADD-AUTO"], "numberForecasts": 7 }' "http://localhost:9072/forecast-api/forecast"
 
-Response:
+Expected response
 
     {
       "forecast" : [ 1.0000000000000002, 2.0000000000000004, 3.0000000000000004, 2.0000000000000004, 1.0000000000000004, 2.664535259100377E-16, -4.736951571734001E-16 ],
@@ -28,6 +25,9 @@ Response:
 
 ### Java client
 
+Forecast-API comes with a java based client. It should be straightforward
+to write a simple REST client for other languages.
+ 
 ##### build.sbt
 
 ```scala
@@ -71,11 +71,11 @@ To build client:
 
 Here are some forecast scenarios. Solid line shows historical data and dotted lines are forecasts. 
 
-![](https://github.com/vidible/aol-on-forecast/blob/master/client/src/test/resources/forecast-client/daily-seasonal/plot-raw-and-actual.png | width=100)
+![](https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal/plot-raw-and-actual.png | width=100)
 
-![](https://github.com/vidible/aol-on-forecast/blob/master/client/src/test/resources/forecast-client/daily-seasonal-with-trend/plot-raw-and-actual.png | width=100)
+![](https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal-with-trend/plot-raw-and-actual.png | width=100)
 
-![](https://github.com/vidible/aol-on-forecast/blob/master/client/src/test/resources/forecast-client/real-data-video-view-supply-with-trend/plot-raw-and-actual.png | width=100)
+![](https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/real-data-video-view-supply-with-trend/plot-raw-and-actual.png | width=100)
 
 ### License
 Forecast API is released under the Apache License, Version 2.0
