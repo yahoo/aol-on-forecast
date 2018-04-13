@@ -8,6 +8,14 @@ before_script:
 
 script:
   # Build client jar and push to Maven Central
-  - cd client #&& sbt compile publishSigned sonatypeRelease
+  - cd client && echo "build client" #&& sbt compile publishSigned sonatypeRelease
   # Build server and push image to Dockerhub
-  - cd ../server && mvn clean install docker:build && docker push vidible/forecast-api:2.0.0
+  - cd ../server && echo "build server" #&& mvn clean install docker:build && docker push vidible/forecast-api:2.0.0
+
+deploy:
+  provider: script
+  script:
+  - cd client && echo "deploy client" #sbt compile publishSigned sonatypeRelease
+  - cd ../server && echo "deploy server" #sbt compile publishSigned sonatypeRelease
+  on:
+    branch: master
