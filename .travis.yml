@@ -4,7 +4,7 @@ scala:
   - 2.11.8
 
 before_script:
-  - docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.0
+  - docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.0 &
 
 script:
   - cd client && sbt compile test
