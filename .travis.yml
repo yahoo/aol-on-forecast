@@ -13,10 +13,10 @@ services:
 
 script:
   # Build server
-  - cd ../server && mvn clean install docker:build
+  - cd server && mvn clean install docker:build
   # Build client and run tests against server
   - docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.0 &
-  - cd client && sbt compile test
+  - cd ../client && sbt compile test
   - docker kill forecast-api
 
 after_success:
