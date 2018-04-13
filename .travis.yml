@@ -14,8 +14,6 @@ script:
 
 deploy:
   provider: script
-  script:
-    - cd client && echo "deploy client" #sbt compile publishSigned sonatypeRelease
-    - cd ../server && echo "deploy server" #sbt compile publishSigned sonatypeRelease
+  script: bash cd client && echo "deploy client" && cd ../server && echo "deploy server"
   on:
     branch: master
