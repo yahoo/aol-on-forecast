@@ -53,7 +53,7 @@ val forecast = client.forecast(Array(1, 2, 3, 4, 3, 2, 1, 1, 2, 3, 4, 3, 2, 1), 
 ```
 
 ## Docs
-Swagger docs can be found at [http://localhost:9072/forecast-ap]](http://localhost:9072/forecast-api). 
+Swagger docs can be found at http://localhost:9072/forecast-api. 
 
 ## Example scenarios
 
