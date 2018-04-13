@@ -31,7 +31,7 @@ to write a simple REST client for other languages.
 ##### build.sbt
 
 ```scala
-    com.aol.one.reporting" % "forecast-api-client" % INSERT_LATEST_VERSION
+    "com.aol.one.reporting" % "forecast-api-client" % INSERT_LATEST_VERSION
 ```
 
 ##### pom.xml
