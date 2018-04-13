@@ -10,7 +10,7 @@ import com.aol.one.reporting.forecastapi.client.ITTestUtil._
 import org.scalatest.mockito.MockitoSugar
 import org.scalatest.{BeforeAndAfterEach, FreeSpec, Matchers}
 
-class ForecastClientIntegrationTest extends FreeSpec with MockitoSugar with Matchers with BeforeAndAfterEach {
+class ForecastQualityTest extends FreeSpec with MockitoSugar with Matchers with BeforeAndAfterEach {
 
   "ForecastClient.forecast weekly" - {
 
