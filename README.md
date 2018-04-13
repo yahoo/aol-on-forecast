@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/vidible/aol-on-forecast.svg?branch=master)](https://travis-ci.org/vidible/aol-on-forecast)
 
-### Forecast API
+## Forecast API
 
 Forecast API is a REST service for making time-series forecasting. 
 It is suitable for making forecasts that exhibit daily, weekly and yearly
@@ -8,7 +8,7 @@ seasonalities. Trends through time can also be detected. For example you
 can use it to forecast number of webpage views for the coming week given 
 data for the past month.
 
-### Quickstart
+## Quickstart
 
 Run the forecast-api docker image and make a rest call to get forecasts
 
@@ -23,7 +23,7 @@ Expected response
       "time" : 108
     }
 
-### Java client
+## Java client
 
 Forecast-API comes with a java based client. It should be straightforward
 to write a simple REST client for other languages.
@@ -53,9 +53,9 @@ val forecast = client.forecast(Array(1, 2, 3, 4, 3, 2, 1, 1, 2, 3, 4, 3, 2, 1), 
 ```
 
 ## Docs
-Swagger docs can be found at [http://localhost:9072/forecast-ap|http://localhost:9072/forecast-api]. 
+Swagger docs can be found at [http://localhost:9072/forecast-ap]](http://localhost:9072/forecast-api). 
 
-### Example scenarios
+## Example scenarios
 
 Here are some forecast scenarios. Solid line shows historical data and dotted lines are forecasts. 
 
@@ -65,7 +65,7 @@ Here are some forecast scenarios. Solid line shows historical data and dotted li
 
 <img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/real-data-video-view-supply-with-trend/plot-raw-and-actual.png" width="400">
 
-### Build from source
+## Build from source
 
 Server:
 
@@ -78,5 +78,5 @@ Client:
     sbt compile
 
 
-### License
+## License
 Forecast API is released under the Apache License, Version 2.0
