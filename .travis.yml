@@ -7,10 +7,9 @@ before_script:
   - docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.0
 
 script:
-  # Build client and test
   - cd client && sbt compile test
-  # Build server
   - cd ../server && mvn clean install docker:build
 
 after_success:
+  - docker kill forecast-api
   - cd ../ && ./script/deploy.sh
