@@ -23,6 +23,16 @@ Expected response
       "time" : 108
     }
 
+## Example scenarios
+
+Here are some forecast scenarios. Solid line shows historical data and dotted lines are forecasts. 
+
+<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal/plot-raw-and-actual.png" width="400">
+
+<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal-with-trend/plot-raw-and-actual.png" width="400">
+
+<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/real-data-video-view-supply-with-trend/plot-raw-and-actual.png" width="400">
+
 ## Java client
 
 Forecast-API comes with a java based client. It should be straightforward
@@ -54,16 +64,6 @@ val forecast = client.forecast(Array(1, 2, 3, 4, 3, 2, 1, 1, 2, 3, 4, 3, 2, 1), 
 
 ## Docs
 Swagger docs can be found at http://localhost:9072/forecast-api. 
-
-## Example scenarios
-
-Here are some forecast scenarios. Solid line shows historical data and dotted lines are forecasts. 
-
-<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal/plot-raw-and-actual.png" width="400">
-
-<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/daily-seasonal-with-trend/plot-raw-and-actual.png" width="400">
-
-<img src="https://raw.githubusercontent.com/vidible/aol-on-forecast/master/client/src/test/resources/forecast-client/real-data-video-view-supply-with-trend/plot-raw-and-actual.png" width="400">
 
 ## Build from source
 
