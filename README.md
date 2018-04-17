@@ -63,8 +63,9 @@ val forecast = client.forecast(Array(1, 2, 3, 4, 3, 2, 1, 1, 2, 3, 4, 3, 2, 1), 
 ```
 
 ## Docs
-- Head over to the [wiki](https://github.com/vidible/aol-on-forecast/wiki) 
-to learn more about forecast algorithms used in Forecast API.
+- Forecast API makes use of a few algorithms including ARIMA, Regression
+and exponential smoothing. Head over to the [wiki](https://github.com/vidible/aol-on-forecast/wiki) 
+to learn more.
 - Swagger docs can be found at http://localhost:9072/forecast-api. 
 
 ## Build from source
