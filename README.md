@@ -63,7 +63,9 @@ val forecast = client.forecast(Array(1, 2, 3, 4, 3, 2, 1, 1, 2, 3, 4, 3, 2, 1), 
 ```
 
 ## Docs
-Swagger docs can be found at http://localhost:9072/forecast-api. 
+- Head over to the [wiki](https://github.com/vidible/aol-on-forecast/wiki) 
+to learn more about forecast algorithms used in Forecast API.
+- Swagger docs can be found at http://localhost:9072/forecast-api. 
 
 ## Build from source
 
@@ -77,6 +79,15 @@ Client:
     cd client
     sbt compile
 
+
+## Contributors
+
+- Alexey Lipodat
+- Paul Eldreth
+- Sergey Likhoman
+- Terry Choi
+- Tilaye Y. Alemu
+- Venkata Vittala
 
 ## License
 Forecast API is released under the Apache License, Version 2.0
