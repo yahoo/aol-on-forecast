@@ -61,7 +61,7 @@ public class SimpleForecastResource {
     @Timed
     @ExceptionMetered
     @ApiOperation(value = "Forecast",
-            notes = "Produce a forecast given a historical time-series and a list of canned set names",
+            notes = "Produce a forecast given a historical time-series and a list of canned` set names",
             response = ForecastResponse.class)
     @ApiResponses({
             @ApiResponse(code = 200, message = "Forecast successful"),
