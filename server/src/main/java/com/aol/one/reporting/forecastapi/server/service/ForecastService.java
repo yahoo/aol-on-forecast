@@ -14,25 +14,52 @@ import com.aol.one.reporting.forecastapi.server.model.request.SelectionForecastR
 import com.aol.one.reporting.forecastapi.server.model.response.CannedSetResponse;
 import com.aol.one.reporting.forecastapi.server.model.response.CollectionResponse;
 import com.aol.one.reporting.forecastapi.server.model.response.ForecastResponse;
-import com.aol.one.reporting.forecastapi.server.util.ForecastUtil;
-import com.aol.one.reporting.forecastapi.server.util.RequestValidation;
-import com.aol.one.reporting.forecastapi.server.models.cs.*;
+import com.aol.one.reporting.forecastapi.server.models.cs.IFSCannedSet;
+import com.aol.one.reporting.forecastapi.server.models.cs.IFSCannedSetCompetition;
+import com.aol.one.reporting.forecastapi.server.models.cs.IFSCannedSetSelection;
+import com.aol.one.reporting.forecastapi.server.models.cs.IFSCannedSetSelectionConstraints;
+import com.aol.one.reporting.forecastapi.server.models.cs.IFSCannedSetSelectionContext;
 import com.aol.one.reporting.forecastapi.server.models.model.IFSModel;
 import com.aol.one.reporting.forecastapi.server.models.model.IFSModelFactory;
 import com.aol.one.reporting.forecastapi.server.models.model.IFSParameterValue;
+import com.aol.one.reporting.forecastapi.server.util.ForecastUtil;
+import com.aol.one.reporting.forecastapi.server.util.RequestValidation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public final class ForecastService {
 
     private static final Logger LOG = LoggerFactory.getLogger(ForecastService.class);
 
+    private static final String[] DEFAULT_CANNED_SET = new String[]{
+            "RW-NONE-DAY",
+            "RW-NONE-DAY-WEEK",
+            "REG-NONE-ADD-DAY",
+            "REG-LINEAR-ADD-DAY",
+            "REG-LINEAR-ADD-DAY-WEEK",
+            "REG-LINEAR-ADD-DAY-LOG",
+            "REG-LINEAR-ADD-DAY-WEEK-LOG",
+            "AR-NONE-DEMEAN-WEEK",
+            "RW-NONE-WEEK",
+            "REG-NONE-ADD-WEEK-SAG",
+            "ARIMA-0,2,2-0,1,1s-WEEK",
+            "EXP-LINEAR-MULT-YEAR",
+            "REG-LINEAR-ADD-YEAR",
+            "REG-NONE-PHASE2-WEEK-YEAR"
+    };
+
     public static final int HOLD_BACK_DAYS = 30;
 
 
-    private ForecastService() {}
+    private ForecastService() {
+    }
 
     public static ForecastResponse easyForecast(EasyForecastRequest easyForecastRequest, long start) throws Exception {
         Integer sfw = RequestValidation.spikeFilter(easyForecastRequest.getSpikeFilterWindow());
@@ -93,7 +120,7 @@ public final class ForecastService {
 
 
         IfsCache cache = IfsConfig.getCache();
-        List<IFSCannedSet> cannedSets = ForecastUtil.setupCannedSets(cache,request);
+        List<IFSCannedSet> cannedSets = ForecastUtil.setupCannedSets(cache, request);
 
         RequestValidation.selectionRequestCacheValidation(cache, cannedSets);
         List<Integer> declineProfitCenterList = new ArrayList<>();
@@ -144,7 +171,7 @@ public final class ForecastService {
     public static List<CannedSetResponse> getCannedSets(String regex) {
         List<CannedSetResponse> responses = new ArrayList<>();
         IfsCache cache = IfsConfig.getCache();
-        for(IFSCannedSet ifsCannedSet : cache.getMap().values()) {
+        for (IFSCannedSet ifsCannedSet : cache.getMap().values()) {
             if (regex == null) {
                 CannedSetResponse response = new CannedSetResponse();
                 response.setCannedSetName(ifsCannedSet.getName());
@@ -166,28 +193,28 @@ public final class ForecastService {
     public static CollectionResponse[] getCollectionCannedSets(String regex) {
         IfsCache cache = IfsConfig.getCache();
         Map<String, List<CannedSetResponse>> map = new HashMap<>();
-        for(String collectionName : cache.getCollectionNames()) {
+        for (String collectionName : cache.getCollectionNames()) {
             if (regex == null || collectionName.matches(regex)) {
                 List<CannedSetResponse> list = new ArrayList<>();
                 List<IFSCannedSet> ifsCannedSets = cache.getList(collectionName);
-                for(IFSCannedSet ifsCannedSet : ifsCannedSets) {
+                for (IFSCannedSet ifsCannedSet : ifsCannedSets) {
                     CannedSetResponse response = new CannedSetResponse();
                     response.setCannedSetName(ifsCannedSet.getName());
                     response.setDescription(ifsCannedSet.getDescription());
                     list.add(response);
                 }
-                map.put(collectionName,list);
+                map.put(collectionName, list);
             }
         }
         CollectionResponse[] array = new CollectionResponse[map.size()];
         int i = 0;
-        for(String collectionName : map.keySet()) {
+        for (String collectionName : map.keySet()) {
             CollectionResponse collectionResponse = new CollectionResponse();
             collectionResponse.setCollectionName(collectionName);
             List<CannedSetResponse> list = map.get(collectionName);
             CannedSetResponse[] cannedSetResponses = new CannedSetResponse[list.size()];
             int j = 0;
-            for(CannedSetResponse cannedSetResponse : list) {
+            for (CannedSetResponse cannedSetResponse : list) {
                 cannedSetResponses[j] = cannedSetResponse;
                 j++;
             }
@@ -207,20 +234,20 @@ public final class ForecastService {
         RequestValidation.timeSeries(request.getTimeSeries());
 
         if (request.getCannedSets() == null || request.getCannedSets().length == 0) {
-            throw new Exception("Empty Canned Set Not allowed");
+            request.setCannedSets(DEFAULT_CANNED_SET);
         }
 
         IfsCache cache = IfsConfig.getCache();
         List<IFSCannedSet> ifsCannedSetList = new ArrayList<>();
-        for(String cannedSet : request.getCannedSets()) {
+        for (String cannedSet : request.getCannedSets()) {
             IFSCannedSet ifsCannedSet = cache.getMap().get(cannedSet);
             ifsCannedSetList.add(ifsCannedSet);
         }
 
         LOG.debug("CannedSet List :");
-        for(IFSCannedSet ifsCannedSet : ifsCannedSetList ) {
+        for (IFSCannedSet ifsCannedSet : ifsCannedSetList) {
             LOG.debug("CannedSet  : " + ifsCannedSet.getName());
-            for(IFSParameterValue param : ifsCannedSet.getParameterSpec().getParameterValues())
+            for (IFSParameterValue param : ifsCannedSet.getParameterSpec().getParameterValues())
                 LOG.debug("     Parameter Key : " + param.getParameter() + " Value :" + param.getValue());
         }
 
@@ -236,8 +263,8 @@ public final class ForecastService {
         context.setProfitCenter(1);
         context.setCannedSetCandidates(ifsCannedSetList);
 
-        
-        IFSCannedSet selectedCannedSet = IFSCannedSetCompetition.competeCannedSets(context,ifsCannedSetList);
+
+        IFSCannedSet selectedCannedSet = IFSCannedSetCompetition.competeCannedSets(context, ifsCannedSetList);
 
         IFSModel model = IFSModelFactory.create(selectedCannedSet.getParameterSpec().getModel());
         IFSModelFactory.setup(model, request.getTimeSeries(), selectedCannedSet.getParameterSpec().getParameterValues());
