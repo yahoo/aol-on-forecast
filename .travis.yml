@@ -21,3 +21,4 @@ script:
 
 after_success:
   - cd ../ && ./script/deploy.sh
+
