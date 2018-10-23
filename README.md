@@ -12,7 +12,7 @@ data for the past month.
 
 Run the forecast-api docker image and make a rest call to get forecasts
 
-    docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.1
+    docker run --name forecast-api -p=9072:8080 vidible/forecast-api:2.0.2
     curl -X POST -H "Content-Type: application/json" -d '{ "timeSeries": [ 0, 1, 2, 3, 2, 1, 0, 0, 1, 2, 3, 2, 1, 0, 0 ], "numberForecasts": 7 }' "http://localhost:9072/forecast-api/forecast"
 
 Expected response
