@@ -41,7 +41,7 @@ credentials += Credentials(
   sys.env.getOrElse("SONATYPE_PASS", "")
 )
 
-isSnapshot := version.value endsWith "SNAPSHOT"
+isSnapshot := true
 
 publishTo := Some(
   if (isSnapshot.value)
