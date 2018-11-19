@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/vidible/aol-on-forecast.svg?branch=master)](https://travis-ci.org/vidible/aol-on-forecast)
+[![Build Status](https://travis-ci.org/OathAdPlatforms/aol-on-forecast.svg?branch=master)](https://travis-ci.org/OathAdPlatforms/aol-on-forecast)
 
 ## Forecast API
 
