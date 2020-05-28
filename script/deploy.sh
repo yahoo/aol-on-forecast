@@ -10,5 +10,5 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
   echo "push server image to Dockerhub"
   cd ../server
   docker login -u=$DOCKERHUB_UNAME -p=$DOCKERHUB_PASS
-  docker push vidible/forecast-api:2.0.3
+  docker push vidible/forecast-api:2.0.4
 fi
