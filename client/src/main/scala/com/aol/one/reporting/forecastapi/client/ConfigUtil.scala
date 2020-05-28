@@ -12,5 +12,5 @@ object ConfigUtil {
 
   def getConfigFile(env: String): String =  Option(env).filterNot(_.isEmpty).getOrElse("dev").toLowerCase()
 
-  def getConfig(): Config = ConfigFactory.load(getConfigFile(sys.env("AOL_ENVIRONMENT")))
+  def getConfig(): Config = ConfigFactory.load(getConfigFile(sys.env.getOrElse("AOL_ENVIRONMENT", "")))
 }
