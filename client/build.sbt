@@ -25,30 +25,15 @@ coverageEnabled in(Test, compile) := true
 coverageEnabled in(Compile, compile) := false
 coverageFailOnMinimum := true
 
-useGpg := false
-usePgpKeyHex("9CE03909AE4C7C0A")
-pgpPublicRing := baseDirectory.value / "project" / ".gnupg" / "pubring.gpg"
-pgpSecretRing := baseDirectory.value / "project" / ".gnupg" / "secring.gpg"
-pgpPassphrase := sys.env.get("PGP_PASS").map(_.toArray)
-
-
 sonatypeProfileName := organization.value
+useGpg := false
 
-credentials += Credentials(
-  "Sonatype Nexus Repository Manager",
-  "oss.sonatype.org",
-  sys.env.getOrElse("SONATYPE_USER", ""),
-  sys.env.getOrElse("SONATYPE_PASS", "")
-)
+publishTo := {
+  if (isSnapshot.value) Some(Opts.resolver.sonatypeSnapshots)
+  else Some(Opts.resolver.sonatypeStaging)
+}
 
-isSnapshot := true
-
-publishTo := Some(
-  if (isSnapshot.value)
-    Opts.resolver.sonatypeSnapshots
-  else
-    Opts.resolver.sonatypeStaging
-)
+resolvers += Resolver.mavenLocal
 
 licenses := Seq("MIT" -> url("https://www.apache.org/licenses/LICENSE-2.0"))
 homepage := Some(url("https://github.com/vidible/aol-on-forecast"))
