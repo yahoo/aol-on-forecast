@@ -36,12 +36,12 @@ publishTo := {
 resolvers += Resolver.mavenLocal
 
 licenses := Seq("MIT" -> url("https://www.apache.org/licenses/LICENSE-2.0"))
-homepage := Some(url("https://github.com/vidible/aol-on-forecast"))
+homepage := Some(url("https://github.com/yahoo/aol-on-forecast"))
 
 scmInfo := Some(
   ScmInfo(
-    url("https://github.com/vidible/aol-on-forecast"),
-    "scm:git@github.com/vidible/aol-on-forecast.git"
+    url("https://github.com/yahoo/aol-on-forecast"),
+    "scm:git@github.com/yahoo/aol-on-forecast.git"
   ))
 
 developers := List(
@@ -49,5 +49,5 @@ developers := List(
     id="One Reporting Team",
     name="One Reporting Team",
     email="noreply@oath.org",
-    url=url("https://github.com/vidible")
+    url=url("https://github.com/yahoo")
   ))
