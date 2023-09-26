@@ -18,7 +18,7 @@
         <jackson.version>2.9.5</jackson.version>
         <servlet.api.version>3.0.1</servlet.api.version>
         <asm.version>2.2.0</asm.version>
-        <catalina.version>7.0.91</catalina.version>
+        <catalina.version>7.0.104</catalina.version>
         <war.plugin.version>2.4</war.plugin.version>
         <surefire.plugin.version>2.16</surefire.plugin.version>
         <failsafe.plugin.version>2.16</failsafe.plugin.version>
